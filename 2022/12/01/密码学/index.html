@@ -20,25 +20,27 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"iwb5820.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.2","exturl":false,"sidebar":{"position":"left","width":350,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="WuBa&#39;s Blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="isolatany">
-<meta property="og:url" content="https://iwb5820.github.io/archives/index.html">
+    <meta name="description" content="密码学基本术语123RSA加密：密文 &#x3D; 明文 EmodN公钥 &#x3D; （E，N） 123RSA解密：明文 &#x3D; 密文 DmodN私钥 &#x3D; （D, N） 生成密匙对 （E, D, N）12345678910111213141516求NN &#x3D; p * q	&#x2F;&#x2F;求p，q两个质数的公倍数，一般取p乘q求LL &#x3D; (p-1, q-1)	&#x2F;&#x2F;求其最小公倍数求E1 &lt; E &lt; Lgcd (E, L) &#x3D;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="密码学">
+<meta property="og:url" content="https://iwb5820.github.io/2022/12/01/%E5%AF%86%E7%A0%81%E5%AD%A6/index.html">
 <meta property="og:site_name" content="isolatany">
-<meta property="og:description" content="WuBa&#39;s Blog">
+<meta property="og:description" content="密码学基本术语123RSA加密：密文 &#x3D; 明文 EmodN公钥 &#x3D; （E，N） 123RSA解密：明文 &#x3D; 密文 DmodN私钥 &#x3D; （D, N） 生成密匙对 （E, D, N）12345678910111213141516求NN &#x3D; p * q	&#x2F;&#x2F;求p，q两个质数的公倍数，一般取p乘q求LL &#x3D; (p-1, q-1)	&#x2F;&#x2F;求其最小公倍数求E1 &lt; E &lt; Lgcd (E, L) &#x3D;">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-12-01T08:25:50.393Z">
+<meta property="article:modified_time" content="2022-12-01T08:35:59.903Z">
 <meta property="article:author" content="WuBa">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://iwb5820.github.io/archives/">
+<link rel="canonical" href="https://iwb5820.github.io/2022/12/01/%E5%AF%86%E7%A0%81%E5%AD%A6/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":"","permalink":"","path":"archives/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://iwb5820.github.io/2022/12/01/%E5%AF%86%E7%A0%81%E5%AD%A6/","path":"2022/12/01/密码学/","title":"密码学"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Archive | isolatany</title>
+<title>密码学 | isolatany</title>
   
 
 
@@ -77,7 +79,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">isolatany</h1>
+      <p class="site-title">isolatany</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -130,7 +132,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -143,6 +145,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AF%86%E7%A0%81%E5%AD%A6"><span class="nav-number">1.</span> <span class="nav-text">密码学</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%9C%AF%E8%AF%AD"><span class="nav-number">1.0.1.</span> <span class="nav-text">基本术语</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%94%9F%E6%88%90%E5%AF%86%E5%8C%99%E5%AF%B9-%EF%BC%88E-D-N%EF%BC%89"><span class="nav-number">1.0.2.</span> <span class="nav-text">生成密匙对 （E, D, N）</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -191,232 +194,94 @@
 
     </div>
 
-    <div class="main-inner archive posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
-  
-  
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <span class="collection-header">Um..! 30 posts in total. Keep on posting.</span>
-      </div>
 
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://iwb5820.github.io/2022/12/01/%E5%AF%86%E7%A0%81%E5%AD%A6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="WuBa">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="isolatany">
+      <meta itemprop="description" content="WuBa's Blog">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="密码学 | isolatany">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          密码学
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2022</span>
+
+      <time title="Created: 2022-12-01 16:25:50 / Modified: 16:35:59" itemprop="dateCreated datePublished" datetime="2022-12-01T16:25:50+08:00">2022-12-01</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="密码学"><a href="#密码学" class="headerlink" title="密码学"></a>密码学</h2><h4 id="基本术语"><a href="#基本术语" class="headerlink" title="基本术语"></a>基本术语</h4><figure class="highlight elm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">RSA</span>加密：</span><br><span class="line">密文 = 明文 <span class="type">EmodN</span></span><br><span class="line">公钥 = （<span class="type">E</span>，<span class="type">N</span>）</span><br></pre></td></tr></table></figure>
+<figure class="highlight elm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">RSA</span>解密：</span><br><span class="line">明文 = 密文 <span class="type">DmodN</span></span><br><span class="line">私钥 = （<span class="type">D</span>, <span class="type">N</span>）</span><br></pre></td></tr></table></figure>
+<h4 id="生成密匙对-（E-D-N）"><a href="#生成密匙对-（E-D-N）" class="headerlink" title="生成密匙对 （E, D, N）"></a>生成密匙对 （E, D, N）</h4><figure class="highlight elm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">求<span class="type">N</span></span><br><span class="line"><span class="type">N</span> = p * q	//求p，q两个质数的公倍数，一般取p乘q</span><br><span class="line"></span><br><span class="line">求<span class="type">L</span></span><br><span class="line"><span class="type">L</span> = (p<span class="number">-1</span>, q<span class="number">-1</span>)	//求其最小公倍数</span><br><span class="line"></span><br><span class="line">求<span class="type">E</span></span><br><span class="line"><span class="number">1</span> &lt; <span class="type">E</span> &lt; <span class="type">L</span></span><br><span class="line"><span class="title">gcd</span> (<span class="type">E</span>, <span class="type">L</span>) = <span class="number">1</span>	//使<span class="type">E</span>和<span class="type">L</span>的最大工约数为<span class="number">1</span> (互质)</span><br><span class="line"></span><br><span class="line">求<span class="type">D</span></span><br><span class="line"><span class="number">1</span> &lt; <span class="type">D</span> &lt; <span class="type">L</span></span><br><span class="line"><span class="type">E</span> * <span class="type">D</span> mod <span class="type">L</span> = <span class="number">1</span></span><br><span class="line"></span><br><span class="line">解释为：((<span class="type">E</span> mod <span class="type">L</span>) * (<span class="type">D</span> mod <span class="type">L</span>)) mod <span class="type">L</span> = <span class="number">1</span></span><br><span class="line">其中 <span class="type">E</span> mod <span class="type">L</span> = <span class="number">1</span>  意为：<span class="type">E</span>除以<span class="type">L</span>余<span class="number">1</span></span><br></pre></td></tr></table></figure>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-12-01T16:25:50+08:00"
-              content="2022-12-01">
-          12-01
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/12/01/%E4%B8%BB%E6%B5%81%E8%8A%AF%E7%89%87%E5%8E%82%E5%95%86/" itemprop="url">
-            <span itemprop="name">主流芯片厂商</span>
-          </a>
-      </div>
+    <footer class="post-footer">
 
-      
-    </header>
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/12/01/%E6%8E%A7%E5%88%B6%E7%8E%AF%E8%B7%AF/" rel="prev" title="环路控制">
+                  <i class="fa fa-chevron-left"></i> 环路控制
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2022/12/01/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="next" title="生产实习笔记">
+                  生产实习笔记 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
   </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-12-01T16:25:50+08:00"
-              content="2022-12-01">
-          12-01
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/12/01/%E6%8C%87%E4%BB%A4%E7%B3%BB%E7%BB%9F/" itemprop="url">
-            <span itemprop="name">汇编指令</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-12-01T16:25:50+08:00"
-              content="2022-12-01">
-          12-01
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/12/01/%E6%A0%88%E9%93%BE/" itemprop="url">
-            <span itemprop="name">栈链</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-12-01T16:25:50+08:00"
-              content="2022-12-01">
-          12-01
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/12/01/%E6%A0%88%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" itemprop="url">
-            <span itemprop="name">栈基本操作</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-12-01T16:25:50+08:00"
-              content="2022-12-01">
-          12-01
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/12/01/%E6%BC%94%E8%AE%B2%E7%A8%BF/" itemprop="url">
-            <span itemprop="name">演讲稿</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-12-01T16:25:50+08:00"
-              content="2022-12-01">
-          12-01
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/12/01/%E9%A1%BA%E5%BA%8F%E8%A1%A8%E7%9A%84%E6%8F%92%E5%85%A5/" itemprop="url">
-            <span itemprop="name">顺序表</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-12-01T16:25:50+08:00"
-              content="2022-12-01">
-          12-01
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/12/01/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url">
-            <span itemprop="name">生产实习笔记</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-12-01T16:25:50+08:00"
-              content="2022-12-01">
-          12-01
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/12/01/%E5%AF%86%E7%A0%81%E5%AD%A6/" itemprop="url">
-            <span itemprop="name">密码学</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-12-01T16:25:50+08:00"
-              content="2022-12-01">
-          12-01
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/12/01/%E6%8E%A7%E5%88%B6%E7%8E%AF%E8%B7%AF/" itemprop="url">
-            <span itemprop="name">环路控制</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-12-01T16:25:50+08:00"
-              content="2022-12-01">
-          12-01
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/12/01/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E5%9F%BA%E7%A1%80/" itemprop="url">
-            <span itemprop="name">开关电源基础</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
+</div>
 
 
-    </div>
-  </div>
-  
-  
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="page-number" href="/archives/page/3/">3</a><a class="extend next" rel="next" title="Next page" aria-label="Next page" href="/archives/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
+
+
+
 
 </div>
   </main>

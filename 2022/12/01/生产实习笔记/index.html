@@ -20,25 +20,52 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"iwb5820.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.2","exturl":false,"sidebar":{"position":"left","width":350,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="WuBa&#39;s Blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="isolatany">
-<meta property="og:url" content="https://iwb5820.github.io/index.html">
+    <meta name="description" content="生产实习笔记1. 第一天 第一步： 环境搭建  第二步：  ST：    意法半导体国产：CH32 MM32ARM：架构公司  A系列：处理器产品  R系列：军工  M系列：微控制器  32位处理器 最大寻址4G  103：M3内核 405： M4    第三步： 回顾IO作用   推挽    开漏    复用    模拟，上下拉      单片机运行条件：  电源电路：供电电路—-3.3V(高)">
+<meta property="og:type" content="article">
+<meta property="og:title" content="生产实习笔记">
+<meta property="og:url" content="https://iwb5820.github.io/2022/12/01/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="isolatany">
-<meta property="og:description" content="WuBa&#39;s Blog">
+<meta property="og:description" content="生产实习笔记1. 第一天 第一步： 环境搭建  第二步：  ST：    意法半导体国产：CH32 MM32ARM：架构公司  A系列：处理器产品  R系列：军工  M系列：微控制器  32位处理器 最大寻址4G  103：M3内核 405： M4    第三步： 回顾IO作用   推挽    开漏    复用    模拟，上下拉      单片机运行条件：  电源电路：供电电路—-3.3V(高)">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://iwb5820.github.io/2022/12/01/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220906151310493.png">
+<meta property="og:image" content="https://iwb5820.github.io/2022/12/01/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220906152403335.png">
+<meta property="og:image" content="https://iwb5820.github.io/2022/12/01/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220906153714101.png">
+<meta property="og:image" content="https://iwb5820.github.io/2022/12/01/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220906170657532.png">
+<meta property="og:image" content="https://iwb5820.github.io/2022/12/01/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220906170709273.png">
+<meta property="og:image" content="https://iwb5820.github.io/2022/12/01/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220906170829216.png">
+<meta property="og:image" content="https://iwb5820.github.io/2022/12/01/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220907160745245.png">
+<meta property="og:image" content="https://iwb5820.github.io/2022/12/01/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220913151602440.png">
+<meta property="og:image" content="https://iwb5820.github.io/2022/12/01/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220913160200763.png">
+<meta property="og:image" content="https://iwb5820.github.io/2022/12/01/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220916140408441.png">
+<meta property="og:image" content="https://iwb5820.github.io/2022/12/01/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220916145052687.png">
+<meta property="og:image" content="https://iwb5820.github.io/2022/12/01/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220917011348457.png">
+<meta property="og:image" content="https://iwb5820.github.io/2022/12/01/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220928012156886.png">
+<meta property="og:image" content="https://iwb5820.github.io/2022/12/01/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220928012222672.png">
+<meta property="og:image" content="https://iwb5820.github.io/2022/12/01/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220928012937763.png">
+<meta property="og:image" content="https://iwb5820.github.io/2022/12/01/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220928013014104.png">
+<meta property="og:image" content="https://iwb5820.github.io/2022/12/01/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220928013230410.png">
+<meta property="og:image" content="https://iwb5820.github.io/2022/12/01/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220928013258544.png">
+<meta property="og:image" content="https://iwb5820.github.io/2022/12/01/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220928013334910.png">
+<meta property="og:image" content="https://iwb5820.github.io/2022/12/01/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220928013448222.png">
+<meta property="og:image" content="https://iwb5820.github.io/2022/12/01/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220928013510582.png">
+<meta property="og:image" content="https://iwb5820.github.io/2022/12/01/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220928013733292.png">
+<meta property="og:image" content="https://iwb5820.github.io/2022/12/01/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220928013803080.png">
+<meta property="og:image" content="https://iwb5820.github.io/2022/12/01/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220928013905172.png">
+<meta property="article:published_time" content="2022-12-01T08:25:50.397Z">
+<meta property="article:modified_time" content="2022-12-01T08:36:16.357Z">
 <meta property="article:author" content="WuBa">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://iwb5820.github.io/2022/12/01/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220906151310493.png">
 
 
-<link rel="canonical" href="https://iwb5820.github.io/">
+<link rel="canonical" href="https://iwb5820.github.io/2022/12/01/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"en","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://iwb5820.github.io/2022/12/01/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/","path":"2022/12/01/生产实习笔记/","title":"生产实习笔记"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>isolatany</title>
+<title>生产实习笔记 | isolatany</title>
   
 
 
@@ -77,7 +104,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">isolatany</h1>
+      <p class="site-title">isolatany</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -130,7 +157,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -143,6 +170,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0"><span class="nav-number">1.</span> <span class="nav-text">生产实习笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E7%AC%AC%E4%B8%80%E5%A4%A9"><span class="nav-number">1.1.</span> <span class="nav-text">1. 第一天</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E7%AC%AC%E4%BA%8C%E5%A4%A9"><span class="nav-number">1.2.</span> <span class="nav-text">2.第二天</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6"><span class="nav-number">1.2.1.</span> <span class="nav-text">创建文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BB%BA%E7%AB%8B%E5%B7%A5%E7%A8%8B"><span class="nav-number">1.2.2.</span> <span class="nav-text">建立工程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E5%8A%9F%E8%83%BD%E5%8F%8A%E6%B3%A8%E6%84%8F%E8%A6%81%E7%82%B9"><span class="nav-number">1.2.3.</span> <span class="nav-text">实现功能及注意要点</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E7%AC%AC%E4%B8%89%E5%A4%A9"><span class="nav-number">1.3.</span> <span class="nav-text">3. 第三天</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8C%89%E9%94%AE%E6%93%8D%E4%BD%9C"><span class="nav-number">1.3.1.</span> <span class="nav-text">按键操作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E6%AD%A5%E9%AA%A4"><span class="nav-number">1.3.2.</span> <span class="nav-text">配置步骤</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%BA%90%E7%A0%81"><span class="nav-number">1.3.3.</span> <span class="nav-text">源码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B6%88%E6%8A%96%E7%89%88"><span class="nav-number">1.3.4.</span> <span class="nav-text">消抖版</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E7%AC%AC%E5%9B%9B%E5%A4%A9"><span class="nav-number">1.4.</span> <span class="nav-text">4.第四天</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#USART%E7%AE%80%E4%BB%8B"><span class="nav-number">1.4.1.</span> <span class="nav-text">USART简介</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%80%9A%E4%BF%A1%E6%96%B9%E5%BC%8F"><span class="nav-number">1.4.2.</span> <span class="nav-text">通信方式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%BA%90%E7%A0%81-1"><span class="nav-number">1.4.3.</span> <span class="nav-text">源码</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E7%AC%AC%E4%BA%94%E5%A4%A9"><span class="nav-number">1.5.</span> <span class="nav-text">5. 第五天</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#LCD%E9%A9%B1%E5%8A%A8"><span class="nav-number">1.5.1.</span> <span class="nav-text">LCD驱动</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%BA%90%E7%A0%81%E5%8D%87%E7%BA%A7"><span class="nav-number">1.5.2.</span> <span class="nav-text">源码升级</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-%E7%AC%AC%E5%85%AD%E5%A4%A9"><span class="nav-number">1.6.</span> <span class="nav-text">6. 第六天</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#SHT20"><span class="nav-number">1.6.1.</span> <span class="nav-text">SHT20</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#sht20%E6%BA%90%E6%96%87%E4%BB%B6"><span class="nav-number">1.6.2.</span> <span class="nav-text">sht20源文件</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%83%E5%A4%A9"><span class="nav-number">1.7.</span> <span class="nav-text">第七天</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%AD%A5%E8%BF%9B%E7%94%B5%E6%9C%BA%E6%BA%90%E7%A0%81"><span class="nav-number">1.7.1.</span> <span class="nav-text">步进电机源码</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E5%85%AB%E5%A4%A9"><span class="nav-number">1.8.</span> <span class="nav-text">第八天</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4"><span class="nav-number">1.8.1.</span> <span class="nav-text">服务器操作步骤</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B9%9D%E5%A4%A9"><span class="nav-number">1.9.</span> <span class="nav-text">第九天</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#esp8266%E6%BA%90%E7%A0%81"><span class="nav-number">1.9.1.</span> <span class="nav-text">esp8266源码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#QMsg%E6%BA%90%E7%A0%81"><span class="nav-number">1.9.2.</span> <span class="nav-text">QMsg源码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#USART2%E6%BA%90%E7%A0%81"><span class="nav-number">1.9.3.</span> <span class="nav-text">USART2源码</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E5%8D%81%E5%A4%A9"><span class="nav-number">1.10.</span> <span class="nav-text">第十天</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#hmacsha1%E6%BA%90%E7%A0%81"><span class="nav-number">1.10.1.</span> <span class="nav-text">hmacsha1源码</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%80%E5%A4%A9"><span class="nav-number">1.11.</span> <span class="nav-text">第十一天</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%93%8D%E4%BD%9C"><span class="nav-number">1.11.1.</span> <span class="nav-text">字符串操作</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E5%8D%81%E4%BA%8C%E5%A4%A9"><span class="nav-number">1.12.</span> <span class="nav-text">第十二天</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0qt%E5%8A%9F%E8%83%BD%E7%9A%84keil-main-c"><span class="nav-number">1.12.1.</span> <span class="nav-text">实现qt功能的keil main.c</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%89%E5%A4%A9"><span class="nav-number">1.13.</span> <span class="nav-text">第十三天</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%80%E7%BB%88%E7%95%8C%E9%9D%A2"><span class="nav-number">1.13.1.</span> <span class="nav-text">最终界面</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E5%8D%81%E5%9B%9B%E5%A4%A9"><span class="nav-number">1.14.</span> <span class="nav-text">第十四天</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%98%BF%E9%87%8C%E4%BA%91%E6%93%8D%E4%BD%9C%E8%AF%A6%E7%BB%86%E6%AD%A5%E9%AA%A4"><span class="nav-number">1.14.1.</span> <span class="nav-text">阿里云操作详细步骤</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -191,526 +219,17 @@
 
     </div>
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://iwb5820.github.io/2022/12/01/%E4%B8%BB%E6%B5%81%E8%8A%AF%E7%89%87%E5%8E%82%E5%95%86/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="WuBa">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="isolatany">
-      <meta itemprop="description" content="WuBa's Blog">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | isolatany">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/12/01/%E4%B8%BB%E6%B5%81%E8%8A%AF%E7%89%87%E5%8E%82%E5%95%86/" class="post-title-link" itemprop="url">主流芯片厂商</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2022-12-01 16:25:50 / Modified: 16:30:37" itemprop="dateCreated datePublished" datetime="2022-12-01T16:25:50+08:00">2022-12-01</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="主流芯片厂商"><a href="#主流芯片厂商" class="headerlink" title="主流芯片厂商"></a>主流芯片厂商</h2><ul>
-<li><p>PC/服务器CPU：北京龙芯、上海兆芯、电科申泰、天津飞腾和海光；</p>
-</li>
-<li><p>基于Arm架构的服务器CPU：天津飞腾、华为海思的鲲鹏和阿里平头哥的倚天；</p></li></ul>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2022/12/01/%E4%B8%BB%E6%B5%81%E8%8A%AF%E7%89%87%E5%8E%82%E5%95%86/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://iwb5820.github.io/2022/12/01/%E6%8C%87%E4%BB%A4%E7%B3%BB%E7%BB%9F/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="WuBa">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="isolatany">
-      <meta itemprop="description" content="WuBa's Blog">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | isolatany">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/12/01/%E6%8C%87%E4%BB%A4%E7%B3%BB%E7%BB%9F/" class="post-title-link" itemprop="url">汇编指令</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2022-12-01 16:25:50 / Modified: 16:42:35" itemprop="dateCreated datePublished" datetime="2022-12-01T16:25:50+08:00">2022-12-01</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="汇编指令"><a href="#汇编指令" class="headerlink" title="汇编指令"></a>汇编指令</h3><h4 id="指令格式"><a href="#指令格式" class="headerlink" title="指令格式"></a>指令格式</h4><p>==&lt; opcode &gt; { &lt; cond &gt; } { S } &lt; Rd &gt;, &lt; Rn &gt; { , &lt; OP2 &gt; }==</p>
-<p>其中 &lt; &gt;中内容必不可少，{ }内容可省略</p>
-<ol>
-<li>&lt; opcode &gt;操作码，例如ADD表示算数加法</li>
-<li>{ &lt; cond&gt; } 指令执行的条件域， 如EQ， NE</li>
-<li>{ S }表示执行结果是否影响CPSR的值，使用后缀则影响</li>
-<li>&lt; Rd &gt; 表目的寄存器</li>
-<li>&lt; Rn &gt; 表示第一个操作数，为寄存器</li>
-<li>&lt; OP2 &gt; 表示第二个操作数，可以是立即数、寄存器或寄存器位移操作数</li>
-</ol>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://iwb5820.github.io/2022/12/01/%E6%A0%88%E9%93%BE/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="WuBa">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="isolatany">
-      <meta itemprop="description" content="WuBa's Blog">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | isolatany">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/12/01/%E6%A0%88%E9%93%BE/" class="post-title-link" itemprop="url">栈链</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2022-12-01 16:25:50" itemprop="dateCreated datePublished" datetime="2022-12-01T16:25:50+08:00">2022-12-01</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-08-30 22:43:32" itemprop="dateModified" datetime="2022-08-30T22:43:32+08:00">2022-08-30</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="栈基本操作"><a href="#栈基本操作" class="headerlink" title="栈基本操作"></a>栈基本操作</h2><h3 id="C-11-版"><a href="#C-11-版" class="headerlink" title="C++ 11 版"></a>C++ 11 版</h3><p>如下是C++语言写的栈链，包括创建，删除等插入查找等基本操作</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> MAXSIZE 100</span></span><br><span class="line"><span class="comment">//函数结果状态代码</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> OK 1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ERROR 0</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> OVERFLOW -2</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//status 是函数返回值类型，其值是函数结果状态代码</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="type">int</span> ElemType;</span><br><span class="line"><span class="keyword">typedef</span>  <span class="type">int</span> Status;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> <span class="title class_">StackNode</span>&#123;</span><br><span class="line">    ElemType data;</span><br><span class="line">    <span class="keyword">struct</span> <span class="title class_">StackNode</span> *next;</span><br><span class="line">&#125;StackNode,*LinkStack;</span><br><span class="line"></span><br><span class="line"><span class="function">Status <span class="title">InitStack</span><span class="params">(LinkStack &amp;S)</span></span>&#123;</span><br><span class="line">    S = <span class="literal">NULL</span>;</span><br><span class="line">    <span class="keyword">return</span> OK;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function">Status <span class="title">Push</span><span class="params">(LinkStack &amp;S, ElemType e)</span></span>&#123;</span><br><span class="line">    LinkStack p = <span class="keyword">new</span> StackNode;</span><br><span class="line">    p-&gt;data = e;</span><br><span class="line">    p-&gt;next = S;</span><br><span class="line">    S = p;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function">Status <span class="title">Pop</span><span class="params">(LinkStack &amp;S,ElemType &amp;e)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(S==<span class="literal">NULL</span>) <span class="keyword">return</span> OK;</span><br><span class="line">    e = S-&gt;data;</span><br><span class="line">    LinkStack p = S;</span><br><span class="line">    S = S-&gt;next;</span><br><span class="line">    <span class="keyword">delete</span> p;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function">ElemType <span class="title">GetTop</span><span class="params">(LinkStack S)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(S != <span class="literal">NULL</span>)</span><br><span class="line">        <span class="keyword">return</span> S-&gt;data;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">TraverseList</span><span class="params">(LinkStack p)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(p)&#123;</span><br><span class="line">        cout&lt;&lt;p-&gt;data&lt;&lt;<span class="string">&quot; &quot;</span>;</span><br><span class="line">        <span class="built_in">TraverseList</span>(p-&gt;next);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    LinkStack S;</span><br><span class="line">    LinkStack p;</span><br><span class="line">    <span class="built_in">InitStack</span>(S);</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;链栈入栈：&quot;</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>; i&lt;=<span class="number">5</span>; i++)&#123;</span><br><span class="line">        <span class="built_in">Push</span>(S,i);</span><br><span class="line">    &#125;</span><br><span class="line">    p=S;</span><br><span class="line">    <span class="keyword">while</span>(p)&#123;</span><br><span class="line">        cout&lt;&lt;p-&gt;data&lt;&lt;<span class="string">&quot; &quot;</span>;</span><br><span class="line">        p=p-&gt;next;</span><br><span class="line">    &#125;cout&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;弹出两个元素：&quot;</span>;</span><br><span class="line">    <span class="type">int</span> e = <span class="number">0</span>;</span><br><span class="line">    <span class="type">int</span> k = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">Pop</span>(S,e);</span><br><span class="line">    <span class="built_in">Pop</span>(S,k);</span><br><span class="line">    p=S;</span><br><span class="line">    <span class="keyword">while</span>(p)&#123;</span><br><span class="line">        cout&lt;&lt;p-&gt;data&lt;&lt;<span class="string">&quot; &quot;</span>;</span><br><span class="line">        p=p-&gt;next;</span><br><span class="line">    &#125;cout&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;取栈顶元素：&quot;</span>&lt;&lt;<span class="built_in">GetTop</span>(S)&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;递归法输出栈链元素：&quot;</span>;</span><br><span class="line">    <span class="built_in">TraverseList</span>(S);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><img src="/2022/12/01/%E6%A0%88%E9%93%BE/image-20220830220244180.png" alt="image-20220830220244180"></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://iwb5820.github.io/2022/12/01/%E6%A0%88%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="WuBa">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="isolatany">
-      <meta itemprop="description" content="WuBa's Blog">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | isolatany">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/12/01/%E6%A0%88%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" class="post-title-link" itemprop="url">栈基本操作</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2022-12-01 16:25:50" itemprop="dateCreated datePublished" datetime="2022-12-01T16:25:50+08:00">2022-12-01</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-08-30 22:43:40" itemprop="dateModified" datetime="2022-08-30T22:43:40+08:00">2022-08-30</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="栈基本操作"><a href="#栈基本操作" class="headerlink" title="栈基本操作"></a>栈基本操作</h2><h3 id="C-11-版"><a href="#C-11-版" class="headerlink" title="C++ 11 版"></a>C++ 11 版</h3><p>如下是C++语言写的顺序栈，包括创建，删除等基本操作</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> MAXSIZE 100</span></span><br><span class="line"><span class="comment">//函数结果状态代码</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> OK 1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ERROR 0</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> OVERFLOW -2</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//status 是函数返回值类型，其值是函数结果状态代码</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="type">int</span> SElemType;</span><br><span class="line"><span class="keyword">typedef</span>  <span class="type">int</span> Status;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span> &#123;</span><br><span class="line">    SElemType *base;        <span class="comment">//栈底指针</span></span><br><span class="line">    SElemType *top;        <span class="comment">//栈顶指针</span></span><br><span class="line">    <span class="type">int</span> stacksize;         <span class="comment">//栈可用的最大容量</span></span><br><span class="line">&#125;SqStack;</span><br><span class="line"></span><br><span class="line"><span class="function">Status <span class="title">InitStack</span><span class="params">(SqStack &amp;S)</span></span>&#123;</span><br><span class="line">    S.base = <span class="keyword">new</span> SElemType[MAXSIZE]; <span class="comment">//为顺序栈分配一个最大容量为MAXSIZE的数组空间</span></span><br><span class="line">    <span class="keyword">if</span>(!S.base)<span class="built_in">exit</span>(OVERFLOW);</span><br><span class="line">    S.top = S.base;</span><br><span class="line">    S.stacksize = MAXSIZE;</span><br><span class="line">    <span class="keyword">return</span> OK;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function">Status <span class="title">Push</span><span class="params">(SqStack &amp;S, SElemType e)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(S.top-S.base == S.stacksize) <span class="keyword">return</span> ERROR;</span><br><span class="line">    *S.top++ = e;</span><br><span class="line">    <span class="keyword">return</span> OK;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function">Status <span class="title">Pop</span><span class="params">(SqStack &amp;S,SElemType &amp;e)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(S.top == S.base) <span class="keyword">return</span> ERROR;</span><br><span class="line">    e = *--S.top;</span><br><span class="line">    <span class="keyword">return</span> OK;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    SqStack S;</span><br><span class="line">    SElemType *p;</span><br><span class="line">    <span class="built_in">InitStack</span>(S);</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;压入栈中的数据：&quot;</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>; i&lt;=<span class="number">5</span>; i++)&#123;</span><br><span class="line">        <span class="built_in">Push</span>(S,i);</span><br><span class="line">        cout&lt;&lt;i&lt;&lt;<span class="string">&quot; &quot;</span>;</span><br><span class="line">    &#125;cout&lt;&lt;endl;</span><br><span class="line">    p = S.top;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;输出压入栈的数据：&quot;</span>;</span><br><span class="line">    <span class="keyword">while</span>(p != S.base<span class="number">-1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        cout&lt;&lt;*p&lt;&lt;<span class="string">&quot; &quot;</span>;</span><br><span class="line">        p--;</span><br><span class="line">    &#125;cout&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;弹出两个元素：&quot;</span>;</span><br><span class="line">    <span class="type">int</span> e=<span class="number">0</span>;</span><br><span class="line">    <span class="type">int</span> k=<span class="number">0</span>;</span><br><span class="line">    <span class="built_in">Pop</span>(S,e);</span><br><span class="line">    <span class="built_in">Pop</span>(S,k);</span><br><span class="line">    p = S.top;</span><br><span class="line">    <span class="keyword">while</span>(p != S.base<span class="number">-1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        cout&lt;&lt;*p&lt;&lt;<span class="string">&quot; &quot;</span>;</span><br><span class="line">        p--;</span><br><span class="line">    &#125;cout&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><img src="/2022/12/01/%E6%A0%88%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/image-20220830213017861.png" alt="image-20220830213017861"></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://iwb5820.github.io/2022/12/01/%E6%BC%94%E8%AE%B2%E7%A8%BF/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="WuBa">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="isolatany">
-      <meta itemprop="description" content="WuBa's Blog">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | isolatany">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/12/01/%E6%BC%94%E8%AE%B2%E7%A8%BF/" class="post-title-link" itemprop="url">演讲稿</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2022-12-01 16:25:50 / Modified: 16:43:10" itemprop="dateCreated datePublished" datetime="2022-12-01T16:25:50+08:00">2022-12-01</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="演讲稿"><a href="#演讲稿" class="headerlink" title="演讲稿"></a>演讲稿</h3><h4 id="格式要求"><a href="#格式要求" class="headerlink" title="格式要求"></a>格式要求</h4><ol>
-<li>顶格写称谓语：</li>
-</ol>
-<blockquote>
-<p>不同的对象，用不同的敬语 （尊敬的老师，亲爱的同学们）</p>
-</blockquote>
-<ol>
-<li>下一行空两格写问候</li>
-</ol>
-<blockquote>
-<p>（大家好！，您好！）</p>
-</blockquote>
-<ol>
-<li>开场白</li>
-</ol>
-<blockquote>
-<p>可自我介绍也可直入主题</p>
-</blockquote>
-<ol>
-<li>正文</li>
-<li>结尾即结束语</li>
-</ol>
-<blockquote>
-<p>（我的演讲完毕，谢谢大家倾听！）</p>
-</blockquote>
-<h4 id="写法要求"><a href="#写法要求" class="headerlink" title="写法要求"></a>写法要求</h4><ol>
-<li><p>内容上的现实性</p>
-<blockquote>
-<p>材料真实可靠，观点态度与生活密切相关，并且是人们所关心的问题。</p>
-</blockquote>
-</li>
-<li><p>情感上的说服性</p>
-<blockquote>
-<p>演讲的作用和目的在与打动听众使其认同观点，动之以情，晓之以理，一定要说服力和感染力</p>
-</blockquote>
-</li>
-<li><p>特定情景性</p>
-</li>
-<li><p>口语话</p>
-</li>
-</ol>
-<h4 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h4><ol>
-<li><p>开场白</p>
-<blockquote>
-<p>点明主题，交代背景， 提出问题， 引入正文，引起思考</p>
-</blockquote>
-</li>
-</ol>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://iwb5820.github.io/2022/12/01/%E9%A1%BA%E5%BA%8F%E8%A1%A8%E7%9A%84%E6%8F%92%E5%85%A5/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="WuBa">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="isolatany">
-      <meta itemprop="description" content="WuBa's Blog">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | isolatany">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/12/01/%E9%A1%BA%E5%BA%8F%E8%A1%A8%E7%9A%84%E6%8F%92%E5%85%A5/" class="post-title-link" itemprop="url">顺序表</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2022-12-01 16:25:50" itemprop="dateCreated datePublished" datetime="2022-12-01T16:25:50+08:00">2022-12-01</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-08-30 11:23:44" itemprop="dateModified" datetime="2022-08-30T11:23:44+08:00">2022-08-30</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="顺序表"><a href="#顺序表" class="headerlink" title="顺序表"></a>顺序表</h2><h3 id="C-11-版"><a href="#C-11-版" class="headerlink" title="C++ 11 版"></a>C++ 11 版</h3><p>如下是C++语言写的顺序表，包括创建，删除查找等基本操作</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> MAXSIZE 100</span></span><br><span class="line"><span class="comment">//函数结果状态代码</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> OK 1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ERROR 0</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> OVERFLOW -2</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//status 是函数返回值类型，其值是函数结果状态代码</span></span><br><span class="line"><span class="keyword">typedef</span> <span class="type">int</span> ElemType;</span><br><span class="line"><span class="keyword">typedef</span>  <span class="type">int</span> Status;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="keyword">struct</span>&#123;</span><br><span class="line">    ElemType *elem;</span><br><span class="line">    <span class="type">int</span> length;</span><br><span class="line">&#125;SqList;</span><br><span class="line"></span><br><span class="line"><span class="comment">//初始化链表</span></span><br><span class="line"><span class="function">Status <span class="title">InitList</span><span class="params">(SqList &amp;L)</span></span>&#123;</span><br><span class="line">    L.elem = <span class="keyword">new</span> ElemType[MAXSIZE]; <span class="comment">//为顺序表分配一个大小为MAXSIE的数组空间</span></span><br><span class="line">    <span class="keyword">if</span>(!L.elem) <span class="built_in">exit</span> (OVERFLOW); <span class="comment">//存储分配失败退出</span></span><br><span class="line">    L.length = <span class="number">0</span>;               <span class="comment">//空表长度为0</span></span><br><span class="line">    <span class="keyword">return</span> OK;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//顺序表的插入</span></span><br><span class="line"><span class="function">Status <span class="title">ListInsert</span><span class="params">(SqList &amp;L,<span class="type">int</span> i, ElemType e)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>((i&lt;<span class="number">1</span>) || (i&gt;L.length+<span class="number">1</span>)) <span class="keyword">return</span> ERROR;   <span class="comment">//i值不合理</span></span><br><span class="line">    <span class="keyword">if</span>(L.length == MAXSIZE) <span class="keyword">return</span> ERROR;       <span class="comment">//当前存储空间已满</span></span><br><span class="line">    <span class="keyword">for</span>( <span class="type">int</span> j=L.length<span class="number">-1</span>; j&gt;=i<span class="number">-1</span>; j--)</span><br><span class="line">        L.elem[i+<span class="number">1</span>] = L.elem[j];                <span class="comment">//插入位置及其之后的后移</span></span><br><span class="line">    L.elem[i<span class="number">-1</span>] = e;                            <span class="comment">//元素e放到第i个位置</span></span><br><span class="line">    ++L.length;                                 <span class="comment">//表长加1</span></span><br><span class="line">    <span class="keyword">return</span> OK;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//取值</span></span><br><span class="line"><span class="function">Status <span class="title">GetElem</span><span class="params">(SqList L, <span class="type">int</span> i, ElemType &amp;e)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(i&lt;<span class="number">1</span> || i&gt;L.length) <span class="keyword">return</span> ERROR;         <span class="comment">//判断i值是否合理，若不合理，返回ERROR</span></span><br><span class="line">    e = L.elem[i<span class="number">-1</span>];                            <span class="comment">//elem[i-1]当元存储第i个数据元素</span></span><br><span class="line">    <span class="keyword">return</span> OK;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//查找</span></span><br><span class="line"><span class="function">Status <span class="title">LocateElem</span><span class="params">(SqList L, ElemType e)</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>; i&lt;L.length; i++)               <span class="comment">//在顺序表中查找值为e的数据元素，返回其序号</span></span><br><span class="line">        <span class="keyword">if</span>(L.elem[i] == e) <span class="keyword">return</span> i+<span class="number">1</span>;          <span class="comment">//查找成功返回其序号i+1</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;                                   <span class="comment">//查找失败返回0</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//删除</span></span><br><span class="line"><span class="function">Status <span class="title">ListDelete</span><span class="params">(SqList &amp;L, <span class="type">int</span> i)</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>((i&lt;<span class="number">1</span>) || (i&gt;L.length)) <span class="keyword">return</span> ERROR;     <span class="comment">//位置不合法</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> j=i; j&lt;=L.length<span class="number">-1</span>; j++)</span><br><span class="line">        L.elem[j<span class="number">-1</span>] = L.elem[j];                <span class="comment">//数据前移</span></span><br><span class="line">    --L.length;                                 <span class="comment">//表长减1</span></span><br><span class="line">    <span class="keyword">return</span> OK;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    SqList L;</span><br><span class="line">    <span class="built_in">InitList</span>(L);</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;存入值 : &quot;</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">1</span>;i&lt;=<span class="number">5</span>;i++)&#123;</span><br><span class="line">        <span class="built_in">ListInsert</span>(L,i,i);              <span class="comment">//传入五个元素1，2，3，4，5</span></span><br><span class="line">        cout&lt;&lt;i&lt;&lt;<span class="string">&quot;  &quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;存入值的输出&quot;</span>&lt;&lt;<span class="string">&quot; : &quot;</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i&lt;<span class="number">5</span>;i++)&#123;                    <span class="comment">//输出五个元素</span></span><br><span class="line">        cout&lt;&lt;L.elem[i]&lt;&lt;<span class="string">&quot;  &quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> e = <span class="number">0</span>; <span class="type">int</span> i = <span class="number">1</span>;</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;用变量 e 取第 &quot;</span>&lt;&lt;i&lt;&lt;<span class="string">&quot; 位为 : &quot;</span>;</span><br><span class="line">    <span class="built_in">GetElem</span>(L, <span class="number">1</span>, e);</span><br><span class="line">    cout&lt;&lt;e&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;查找数值为2的元素&quot;</span>&lt;&lt;<span class="string">&quot;返回其下标 : &quot;</span>&lt;&lt;<span class="built_in">LocateElem</span>(L,<span class="number">2</span>)&lt;&lt;endl;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">ListDelete</span>(L,<span class="number">2</span>);</span><br><span class="line">    cout&lt;&lt;<span class="string">&quot;删除位置2上的元素后，顺序表中元素 : &quot;</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i = <span class="number">0</span>;i&lt;<span class="number">5</span>;i++)&#123;                    <span class="comment">//输出五个元素</span></span><br><span class="line">        cout&lt;&lt;L.elem[i]&lt;&lt;<span class="string">&quot;  &quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p><img src="/2022/12/01/%E9%A1%BA%E5%BA%8F%E8%A1%A8%E7%9A%84%E6%8F%92%E5%85%A5/image-20220830112337776.png" alt="image-20220830112337776"></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
     <link itemprop="mainEntityOfPage" href="https://iwb5820.github.io/2022/12/01/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -724,13 +243,13 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | isolatany">
+      <meta itemprop="name" content="生产实习笔记 | isolatany">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/12/01/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">生产实习笔记</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          生产实习笔记
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -754,7 +273,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="生产实习笔记"><a href="#生产实习笔记" class="headerlink" title="生产实习笔记"></a>生产实习笔记</h2><h3 id="1-第一天"><a href="#1-第一天" class="headerlink" title="1. 第一天"></a>1. 第一天</h3><ol>
+        <h2 id="生产实习笔记"><a href="#生产实习笔记" class="headerlink" title="生产实习笔记"></a>生产实习笔记</h2><h3 id="1-第一天"><a href="#1-第一天" class="headerlink" title="1. 第一天"></a>1. 第一天</h3><ol>
 <li><p>第一步： 环境搭建</p>
 </li>
 <li><p>第二步： </p>
@@ -1009,7 +528,6 @@
 
 ![image-20220928014156229](生产实习笔记/image-20220928014156229.png)
 </code></pre>
-      
     </div>
 
     
@@ -1017,8 +535,21 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/12/01/%E5%AF%86%E7%A0%81%E5%AD%A6/" rel="prev" title="密码学">
+                  <i class="fa fa-chevron-left"></i> 密码学
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2022/12/01/%E9%A1%BA%E5%BA%8F%E8%A1%A8%E7%9A%84%E6%8F%92%E5%85%A5/" rel="next" title="顺序表">
+                  顺序表 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
     </footer>
   </article>
 </div>
@@ -1026,376 +557,7 @@
 
 
 
-    
 
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://iwb5820.github.io/2022/12/01/%E5%AF%86%E7%A0%81%E5%AD%A6/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="WuBa">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="isolatany">
-      <meta itemprop="description" content="WuBa's Blog">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | isolatany">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/12/01/%E5%AF%86%E7%A0%81%E5%AD%A6/" class="post-title-link" itemprop="url">密码学</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2022-12-01 16:25:50 / Modified: 16:35:59" itemprop="dateCreated datePublished" datetime="2022-12-01T16:25:50+08:00">2022-12-01</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="密码学"><a href="#密码学" class="headerlink" title="密码学"></a>密码学</h2><h4 id="基本术语"><a href="#基本术语" class="headerlink" title="基本术语"></a>基本术语</h4><figure class="highlight elm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">RSA</span>加密：</span><br><span class="line">密文 = 明文 <span class="type">EmodN</span></span><br><span class="line">公钥 = （<span class="type">E</span>，<span class="type">N</span>）</span><br></pre></td></tr></table></figure>
-<figure class="highlight elm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">RSA</span>解密：</span><br><span class="line">明文 = 密文 <span class="type">DmodN</span></span><br><span class="line">私钥 = （<span class="type">D</span>, <span class="type">N</span>）</span><br></pre></td></tr></table></figure>
-<h4 id="生成密匙对-（E-D-N）"><a href="#生成密匙对-（E-D-N）" class="headerlink" title="生成密匙对 （E, D, N）"></a>生成密匙对 （E, D, N）</h4><figure class="highlight elm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">求<span class="type">N</span></span><br><span class="line"><span class="type">N</span> = p * q	//求p，q两个质数的公倍数，一般取p乘q</span><br><span class="line"></span><br><span class="line">求<span class="type">L</span></span><br><span class="line"><span class="type">L</span> = (p<span class="number">-1</span>, q<span class="number">-1</span>)	//求其最小公倍数</span><br><span class="line"></span><br><span class="line">求<span class="type">E</span></span><br><span class="line"><span class="number">1</span> &lt; <span class="type">E</span> &lt; <span class="type">L</span></span><br><span class="line"><span class="title">gcd</span> (<span class="type">E</span>, <span class="type">L</span>) = <span class="number">1</span>	//使<span class="type">E</span>和<span class="type">L</span>的最大工约数为<span class="number">1</span> (互质)</span><br><span class="line"></span><br><span class="line">求<span class="type">D</span></span><br><span class="line"><span class="number">1</span> &lt; <span class="type">D</span> &lt; <span class="type">L</span></span><br><span class="line"><span class="type">E</span> * <span class="type">D</span> mod <span class="type">L</span> = <span class="number">1</span></span><br><span class="line"></span><br><span class="line">解释为：((<span class="type">E</span> mod <span class="type">L</span>) * (<span class="type">D</span> mod <span class="type">L</span>)) mod <span class="type">L</span> = <span class="number">1</span></span><br><span class="line">其中 <span class="type">E</span> mod <span class="type">L</span> = <span class="number">1</span>  意为：<span class="type">E</span>除以<span class="type">L</span>余<span class="number">1</span></span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://iwb5820.github.io/2022/12/01/%E6%8E%A7%E5%88%B6%E7%8E%AF%E8%B7%AF/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="WuBa">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="isolatany">
-      <meta itemprop="description" content="WuBa's Blog">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | isolatany">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/12/01/%E6%8E%A7%E5%88%B6%E7%8E%AF%E8%B7%AF/" class="post-title-link" itemprop="url">环路控制</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2022-12-01 16:25:50 / Modified: 16:35:42" itemprop="dateCreated datePublished" datetime="2022-12-01T16:25:50+08:00">2022-12-01</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="电源系统框图"><a href="#电源系统框图" class="headerlink" title="电源系统框图"></a>电源系统框图</h3><pre class="mermaid">flowchart LR
-Vin--+--> 1((S)) --e--> H_s --> Vout_S 
-Vout_S-->2[\G_S/] -- - -->1((s))</pre>
-
-<script type="math/tex; mode=display">
-\frac{V_{out}(s)} {V_{in}(s)} = \frac{H(s)}{1 + H(s)G(s)}</script><script type="math/tex; mode=display">
-{V_{out}(s) = \lim_{V_{in}(s)\to 0}[\frac{H(s)}{1+G(s)H(s)}V_{in}(s)]}</script><script type="math/tex; mode=display">
-1+G(s)H(s) = 0 \to {\begin{cases} |G(s)H(s)| = 1 = 0dB\\ \angle G(s)H(s) = -180^\circ&\end{cases}} \to {-1}/{J_0}</script><h3 id="环路稳定性判据"><a href="#环路稳定性判据" class="headerlink" title="环路稳定性判据"></a>环路稳定性判据</h3><p><strong>奈奎斯特稳定性判据，当系统的相位裕量大于0度时，此系统是稳定的。</strong></p>
-<ol>
-<li>在穿越频率处，总开环系统要有大于30度的相位裕量；</li>
-<li>为防止-2增益斜率的电路相位快速变化，系统的开环增益曲线在穿越频率附近的增益斜率应为-1（ -20db/10倍频程)</li>
-<li>增益裕量是开环系统的模的度量，该变化可能导致曲线刚好通过-1 点。一般需要6db的增益裕量。</li>
-</ol>
-<blockquote>
-<p>备注：应当注意，并不是绝对要求开环增益曲线在穿越频率附近的增益斜率为必须为-1，但是由于-1增益斜率对应的相位曲线相位延迟较小，且变化相对缓慢，因此它能够保证，当某些环节的相位变化被忽略时，相位曲线仍将具有足够的相位裕量，使系统保持稳定。</p>
-</blockquote>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://iwb5820.github.io/2022/12/01/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E5%9F%BA%E7%A1%80/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="WuBa">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="isolatany">
-      <meta itemprop="description" content="WuBa's Blog">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | isolatany">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2022/12/01/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E5%9F%BA%E7%A1%80/" class="post-title-link" itemprop="url">开关电源基础</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2022-12-01 16:25:50 / Modified: 16:35:24" itemprop="dateCreated datePublished" datetime="2022-12-01T16:25:50+08:00">2022-12-01</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="开关电源基础"><a href="#开关电源基础" class="headerlink" title="开关电源基础"></a>开关电源基础</h3><hr>
-<p>定义脉冲占空比：$ D = \frac{T_{on}}{T}$</p>
-<p>T 表示开关S开关重复周期，$ T_{on} $ 表示开关S在一个开关周期中的导通时间。</p>
-<p>直流输出电压 $U_o$ 输出电压与输入电压 $U_i$ 的关系：$U_o = U_i * D$ </p>
-<hr>
-<h4 id="一、基本组成"><a href="#一、基本组成" class="headerlink" title="一、基本组成"></a>一、基本组成</h4><ol>
-<li>驱动器</li>
-<li>比较放大器</li>
-<li>信号源</li>
-<li>辅助电路 （ 过流过压保护，输入滤波，输出采样，功能指示）</li>
-</ol>
-<hr>
-<h4 id="二、开关电源特点"><a href="#二、开关电源特点" class="headerlink" title="二、开关电源特点"></a>二、开关电源特点</h4><div class="table-container">
-<table>
-<thead>
-<tr>
-<th style="text-align:center">开关电源的特点</th>
-<th style="text-align:center">具体内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">效率高</td>
-<td style="text-align:center">功率开关管工作在开关状态，功耗小效率高。工作频率高在20KHz以上（滤波元件数值减低）</td>
-</tr>
-<tr>
-<td style="text-align:center">重量轻</td>
-<td style="text-align:center">节省了大量漆包线与硅钢片，使重量体积大幅下降</td>
-</tr>
-<tr>
-<td style="text-align:center">稳压范围宽</td>
-<td style="text-align:center">合理设计电源可以使输出电压范围在 $\pm2\%$ 以下</td>
-</tr>
-<tr>
-<td style="text-align:center">安全可靠</td>
-<td style="text-align:center">可以方便的设置各种形式的保护电路，负载出现故障时可以切断电源保证功能可靠</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h4 id="三、开关电源分类"><a href="#三、开关电源分类" class="headerlink" title="三、开关电源分类"></a>三、开关电源分类</h4><pre class="mermaid">graph TD
-开关电源分类-->
-    按输出稳压控制方式-->PWM脉冲宽度调制
-    按输出稳压控制方式-->PFM脉冲频率调制
-    按输出稳压控制方式-->PSM脉冲调频调宽
-开关电源分类-->
-    按触发方式分类-->自激式开关电源
-    按触发方式分类-->它激式开关电源
-开关电源分类-->
-    按输出取样方式分类-->直接输出取样开关电源
-    按输出取样方式分类-->间接输出取样开关电源
-开关电源分类--> 
-    按其他方式分类--> 串联/并联
-    按其他方式分类--> 单端正/反激
-    按其他方式分类--> 半桥/全桥</pre>
-
-
-
-
-
-
-
-<p>​        开关电源的负载变化瞬态响应主要由输出端LC滤波器的特性决定，所以可以通过提高开关频率、降低输出滤波器LC的方法来改善瞬态响应特性。</p>
-<p>​        光电耦合器中三极管集电极电流 $I_C$ 的大小与光电二极管电流 $I_F$ 及光电耦合系数 $h$ 成正比： $I_C = h *I_F$ </p>
-<h4 id="四、主要技术指标"><a href="#四、主要技术指标" class="headerlink" title="四、主要技术指标"></a>四、主要技术指标</h4><div class="table-container">
-<table>
-<thead>
-<tr>
-<th style="text-align:center">技术指标</th>
-<th style="text-align:left">具体内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">输入电压变化范围</td>
-<td style="text-align:left">当输出电压保持固定时，输入电压的变化范围（表征适应外界变化的能力，电源使用范围）<br> 【取决于电源的误差放大、反馈调节电路的增益、占空比调节的范围】</td>
-</tr>
-<tr>
-<td style="text-align:center">输出内阻 $ R_o$</td>
-<td style="text-align:left">输出电压变化量 $\Delta U_o$ 与输出电流的变化量 $\Delta I_o$ 的比值。 $ R_o = \frac{\Delta U_o}{\Delta I_o} $ <br>【$R_o$ 越小代表电源输出电压随负载电流的变化越小，稳压性能越好】</td>
-</tr>
-<tr>
-<td style="text-align:center">效率 $\eta$</td>
-<td style="text-align:left">电源输出功率$P_o$与输入功率$P_i$的比值。$\eta  = \frac{P_o}{P_i}$ <br>【$\eta $ 越高，体积越小，可靠性越高】</td>
-</tr>
-<tr>
-<td style="text-align:center">输出纹波电压</td>
-<td style="text-align:left">表示方法：输出纹波有效值。输出纹波电压的峰峰值$U_{pp}$<br>【纹波电压越小，电源输出性能越好】</td>
-</tr>
-<tr>
-<td style="text-align:center">输出电压调节范围</td>
-<td style="text-align:left">输出电压取决于基准电压和取样电路的元件参数。<br>【反映在开关管调整脉冲占空比D的变化范围】</td>
-</tr>
-<tr>
-<td style="text-align:center">输出电压稳定性</td>
-<td style="text-align:left">输出电压随负载变化而变化的特性。（取决于反馈调节回路的增益及频率响应特性）<br>【反馈调节回路增益越高，基准电压$U_E$越稳定，输出电压$U_o$的稳定性就越好】</td>
-</tr>
-<tr>
-<td style="text-align:center">输出功率$P_o$</td>
-<td style="text-align:left">电源能输出给负载的最大功率，与负载功率有关，要求存在 20-50%裕量</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h5 id="串联开关电源示意"><a href="#串联开关电源示意" class="headerlink" title="串联开关电源示意"></a>串联开关电源示意</h5><pre class="mermaid">graph LR
-220V
-整流滤波--> 开关元件-->脉冲整流滤波-->输出电压
-基准电压-->误差放大器-->脉宽调制-->开关元件
-脉冲整流滤波-->取样电路-->误差放大器
-地</pre>
-
-<p>存在问题：</p>
-<ol>
-<li>输入输出不隔离，使电路板底板带电，使用不安全</li>
-<li>功率开关管串联在输入$U_i$和输出$U_o$之间，对开关管耐压要求低</li>
-</ol>
-<h5 id="并联开关电源示意"><a href="#并联开关电源示意" class="headerlink" title="并联开关电源示意"></a>并联开关电源示意</h5><pre class="mermaid">graph LR
-220V
-储能电感-->脉冲整流滤波-->输出电压
-整流滤波-->储能电感--> 开关元件-->脉冲整流滤波
-
-基准电压-->误差放大器-->脉宽调制-->开关元件
-脉冲整流滤波-->取样电路-->误差放大器
-地</pre>
-
-
-
-<ol>
-<li><p>输出电压：$U_o = U_i \frac{1}{1-D}$</p>
-</li>
-<li><p>储能电感：可以转化为变压器耦合并联开关电源【变压器初级次级相互隔离，电路地分开，使次级侧电路地不带电，使用安全】</p>
-<p>【冷底板供电】</p>
-</li>
-<li><p>并联开关电源中对开关管耐压要求较高</p>
-</li>
-</ol>
-<h4 id="五、开关电源技术要点"><a href="#五、开关电源技术要点" class="headerlink" title="五、开关电源技术要点"></a>五、开关电源技术要点</h4><ol>
-<li>主开关电源</li>
-<li>副电源</li>
-<li>辅助电路</li>
-</ol>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" title="Next page" aria-label="Next page" href="/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
 
 </div>
   </main>

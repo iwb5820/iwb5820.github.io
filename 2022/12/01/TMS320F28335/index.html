@@ -20,25 +20,27 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"iwb5820.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.2","exturl":false,"sidebar":{"position":"left","width":350,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="WuBa&#39;s Blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="isolatany">
-<meta property="og:url" content="https://iwb5820.github.io/archives/index.html">
+    <meta name="description" content="主要特征单周期乘法运算  一个周期内完成3232位乘法，或两个 16  16 位的乘法累加运算 （同样32位需要四个周期完成） 快速的中断响应 可在任何内存位置进行单周期读、修改、写操作 可采用C &#x2F; C++软件编程，效率非常高  处理器主要资源 32位浮点DSP，主频 150MHZ，方便电机控制，电力设备控制及工业控制 片上存储器： FLASH—256K16位， SRAM—36K  16位； B">
+<meta property="og:type" content="article">
+<meta property="og:title" content="TMS320">
+<meta property="og:url" content="https://iwb5820.github.io/2022/12/01/TMS320F28335/index.html">
 <meta property="og:site_name" content="isolatany">
-<meta property="og:description" content="WuBa&#39;s Blog">
+<meta property="og:description" content="主要特征单周期乘法运算  一个周期内完成3232位乘法，或两个 16  16 位的乘法累加运算 （同样32位需要四个周期完成） 快速的中断响应 可在任何内存位置进行单周期读、修改、写操作 可采用C &#x2F; C++软件编程，效率非常高  处理器主要资源 32位浮点DSP，主频 150MHZ，方便电机控制，电力设备控制及工业控制 片上存储器： FLASH—256K16位， SRAM—36K  16位； B">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-12-01T08:25:50.355Z">
+<meta property="article:modified_time" content="2022-12-01T08:40:38.082Z">
 <meta property="article:author" content="WuBa">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://iwb5820.github.io/archives/">
+<link rel="canonical" href="https://iwb5820.github.io/2022/12/01/TMS320F28335/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":"","permalink":"","path":"archives/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://iwb5820.github.io/2022/12/01/TMS320F28335/","path":"2022/12/01/TMS320F28335/","title":"TMS320"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Archive | isolatany</title>
+<title>TMS320 | isolatany</title>
   
 
 
@@ -77,7 +79,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">isolatany</h1>
+      <p class="site-title">isolatany</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -130,7 +132,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -143,6 +145,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%BB%E8%A6%81%E7%89%B9%E5%BE%81"><span class="nav-number">1.</span> <span class="nav-text">主要特征</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%84%E7%90%86%E5%99%A8%E4%B8%BB%E8%A6%81%E8%B5%84%E6%BA%90"><span class="nav-number">2.</span> <span class="nav-text">处理器主要资源</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%95%E8%84%9A%E5%8F%8A%E5%85%B6%E5%8A%9F%E8%83%BD%E5%88%86%E5%B8%83"><span class="nav-number">3.</span> <span class="nav-text">引脚及其功能分布</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E5%AD%A6%E5%A5%BD"><span class="nav-number">4.</span> <span class="nav-text">如何学好</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%80%E5%B0%8F%E7%B3%BB%E7%BB%9F%E7%BB%84%E6%88%90"><span class="nav-number">5.</span> <span class="nav-text">最小系统组成</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -191,232 +194,124 @@
 
     </div>
 
-    <div class="main-inner archive posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
-  
-  
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <span class="collection-header">Um..! 30 posts in total. Keep on posting.</span>
-      </div>
 
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://iwb5820.github.io/2022/12/01/TMS320F28335/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="WuBa">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="isolatany">
+      <meta itemprop="description" content="WuBa's Blog">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="TMS320 | isolatany">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          TMS320
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2022</span>
+
+      <time title="Created: 2022-12-01 16:25:50 / Modified: 16:40:38" itemprop="dateCreated datePublished" datetime="2022-12-01T16:25:50+08:00">2022-12-01</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h3 id="主要特征"><a href="#主要特征" class="headerlink" title="主要特征"></a>主要特征</h3><p>单周期乘法运算</p>
+<ol>
+<li>一个周期内完成32<em>32位乘法，或两个 16 </em> 16 位的乘法累加运算 （同样32位需要四个周期完成）</li>
+<li>快速的中断响应</li>
+<li>可在任何内存位置进行单周期读、修改、写操作</li>
+<li>可采用C / C++软件编程，效率非常高</li>
+</ol>
+<h3 id="处理器主要资源"><a href="#处理器主要资源" class="headerlink" title="处理器主要资源"></a>处理器主要资源</h3><ol>
+<li>32位浮点DSP，主频 150MHZ，方便电机控制，电力设备控制及工业控制</li>
+<li>片上存储器： FLASH—256K<em>16位， SRAM—36K </em> 16位； BOOT ROM—8K <em> 16位； OPT ROM—2K </em> 16位。 其中FLASH，OPT ROM受口令保护，可以保护用户程序</li>
+<li>片上外设： PWM — 18路； HRPWM — 6路； CAP — 6 路； QEP — 2通道；ADC — 2 * 8 通道， 12位，80ns转换时间，0-3V输入量程；SCI — 3通道； MCBPS — 2通道； CAN—2通道； SPI — 1通道； I2C—1通道； 外部存储器扩展接口XINIF；通用输入/输出IO—88个；看门狗电路； </li>
+</ol>
+<h3 id="引脚及其功能分布"><a href="#引脚及其功能分布" class="headerlink" title="引脚及其功能分布"></a>引脚及其功能分布</h3><ol>
+<li>JTAG引脚</li>
+<li>时钟引脚</li>
+<li>复位引脚</li>
+<li>电源引脚</li>
+<li>ADC信号引脚</li>
+<li>GPIO和外设信号引脚</li>
+</ol>
+<h3 id="如何学好"><a href="#如何学好" class="headerlink" title="如何学好"></a>如何学好</h3><ol>
+<li>基本外设： GPIO输入输出，外部中断，定时器，串口</li>
+<li>掌握基础的模拟电路和数字电路</li>
+<li>深入学习： SPI、IIC、SCI、ECAN、EPWM、ADC、 MCBSP、 ECAP、EQEP等</li>
+<li>高级功能： UCOS、 FATFS、 MATALB</li>
+<li>C语言能力，多浏览论坛</li>
+</ol>
+<h3 id="最小系统组成"><a href="#最小系统组成" class="headerlink" title="最小系统组成"></a>最小系统组成</h3><ol>
+<li>电源电路</li>
+<li>复位电路</li>
+<li>晶振电路</li>
+<li>下载电路</li>
+</ol>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-12-01T16:25:50+08:00"
-              content="2022-12-01">
-          12-01
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/12/01/%E4%B8%BB%E6%B5%81%E8%8A%AF%E7%89%87%E5%8E%82%E5%95%86/" itemprop="url">
-            <span itemprop="name">主流芯片厂商</span>
-          </a>
-      </div>
+    <footer class="post-footer">
 
-      
-    </header>
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2022/12/01/PCB%20Editor%20%E5%9F%BA%E7%A1%80/" rel="prev" title="PCB Editor">
+                  <i class="fa fa-chevron-left"></i> PCB Editor
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2022/12/01/%E5%8D%8A%E6%88%90%E5%93%81%E7%9A%84%E4%BA%95%E5%AD%97%E6%A3%8B/" rel="next" title="半成品的井字棋">
+                  半成品的井字棋 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
   </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-12-01T16:25:50+08:00"
-              content="2022-12-01">
-          12-01
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/12/01/%E6%8C%87%E4%BB%A4%E7%B3%BB%E7%BB%9F/" itemprop="url">
-            <span itemprop="name">汇编指令</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-12-01T16:25:50+08:00"
-              content="2022-12-01">
-          12-01
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/12/01/%E6%A0%88%E9%93%BE/" itemprop="url">
-            <span itemprop="name">栈链</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-12-01T16:25:50+08:00"
-              content="2022-12-01">
-          12-01
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/12/01/%E6%A0%88%E5%9F%BA%E6%9C%AC%E6%93%8D%E4%BD%9C/" itemprop="url">
-            <span itemprop="name">栈基本操作</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-12-01T16:25:50+08:00"
-              content="2022-12-01">
-          12-01
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/12/01/%E6%BC%94%E8%AE%B2%E7%A8%BF/" itemprop="url">
-            <span itemprop="name">演讲稿</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-12-01T16:25:50+08:00"
-              content="2022-12-01">
-          12-01
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/12/01/%E9%A1%BA%E5%BA%8F%E8%A1%A8%E7%9A%84%E6%8F%92%E5%85%A5/" itemprop="url">
-            <span itemprop="name">顺序表</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-12-01T16:25:50+08:00"
-              content="2022-12-01">
-          12-01
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/12/01/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url">
-            <span itemprop="name">生产实习笔记</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-12-01T16:25:50+08:00"
-              content="2022-12-01">
-          12-01
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/12/01/%E5%AF%86%E7%A0%81%E5%AD%A6/" itemprop="url">
-            <span itemprop="name">密码学</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-12-01T16:25:50+08:00"
-              content="2022-12-01">
-          12-01
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/12/01/%E6%8E%A7%E5%88%B6%E7%8E%AF%E8%B7%AF/" itemprop="url">
-            <span itemprop="name">环路控制</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2022-12-01T16:25:50+08:00"
-              content="2022-12-01">
-          12-01
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/12/01/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E5%9F%BA%E7%A1%80/" itemprop="url">
-            <span itemprop="name">开关电源基础</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
+</div>
 
 
-    </div>
-  </div>
-  
-  
-  
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="page-number" href="/archives/page/3/">3</a><a class="extend next" rel="next" title="Next page" aria-label="Next page" href="/archives/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
+
+
+
 
 </div>
   </main>
