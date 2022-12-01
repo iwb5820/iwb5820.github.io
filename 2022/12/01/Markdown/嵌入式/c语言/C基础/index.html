@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/iwb5820/images/iname.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/iwb5820/images/iname.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/iwb5820/images/iname.png">
+  <link rel="mask-icon" href="/iwb5820/iname.png" color="#222">
+  <link rel="manifest" href="/iwb5820/iname.png">
+
+<link rel="stylesheet" href="/iwb5820/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"github.com","root":"/iwb5820/","images":"/iwb5820/images","scheme":"Gemini","darkmode":false,"version":"8.13.2","exturl":false,"sidebar":{"position":"left","width":350,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/iwb5820/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/iwb5820/js/config.js"></script>
+
+    <meta name="description" content="C基础指针1234567891011121314151617181920212223242526272829#include &lt;stdio.h&gt;int main() &amp;#123;    int a &#x3D; 65;    int addr;    addr &#x3D; 0x0061FF1C;    &#x2F;&#x2F; addr &#x3D; (int)&amp;a;   将a的地址传给addr， &amp;a是地址值，ad">
+<meta property="og:type" content="article">
+<meta property="og:title" content="isolatany">
+<meta property="og:url" content="https://github.com/iwb5820/2022/12/01/Markdown/%E5%B5%8C%E5%85%A5%E5%BC%8F/c%E8%AF%AD%E8%A8%80/C%E5%9F%BA%E7%A1%80/index.html">
+<meta property="og:site_name" content="isolatany">
+<meta property="og:description" content="C基础指针1234567891011121314151617181920212223242526272829#include &lt;stdio.h&gt;int main() &amp;#123;    int a &#x3D; 65;    int addr;    addr &#x3D; 0x0061FF1C;    &#x2F;&#x2F; addr &#x3D; (int)&amp;a;   将a的地址传给addr， &amp;a是地址值，ad">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-12-01T06:45:39.979Z">
+<meta property="article:modified_time" content="2022-09-22T11:33:42.000Z">
+<meta property="article:author" content="WuBa">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://github.com/iwb5820/2022/12/01/Markdown/%E5%B5%8C%E5%85%A5%E5%BC%8F/c%E8%AF%AD%E8%A8%80/C%E5%9F%BA%E7%A1%80/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://github.com/iwb5820/2022/12/01/Markdown/%E5%B5%8C%E5%85%A5%E5%BC%8F/c%E8%AF%AD%E8%A8%80/C%E5%9F%BA%E7%A1%80/","path":"2022/12/01/Markdown/嵌入式/c语言/C基础/","title":""}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title> | isolatany</title>
+  
+
+
+
+
+
+
+  <script async defer data-website-id="" src=""></script>
+
+  <script defer data-domain="" src=""></script>
+
+  <noscript>
+    <link rel="stylesheet" href="/iwb5820/css/noscript.css">
+  </noscript>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/iwb5820/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">isolatany</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/iwb5820/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-categories"><a href="/iwb5820/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#C%E5%9F%BA%E7%A1%80"><span class="nav-number">1.</span> <span class="nav-text">C基础</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8C%87%E9%92%88"><span class="nav-number">1.1.</span> <span class="nav-text">指针</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%86%85%E5%AD%98%E5%88%86%E9%85%8D"><span class="nav-number">1.2.</span> <span class="nav-text">内存分配</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%80%E7%BB%B4%E6%95%B0%E5%80%BC%E6%95%B0%E7%BB%84"><span class="nav-number">1.3.</span> <span class="nav-text">一维数值数组</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BC%A0%E9%80%92"><span class="nav-number">1.4.</span> <span class="nav-text">传递</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">WuBa</p>
+  <div class="site-description" itemprop="description">WuBa's Blog</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/iwb5820/archives/">
+          <span class="site-state-item-count">29</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/iwb5820" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;iwb5820"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:iwb5820@gmail.com" title="E-Mail → mailto:iwb5820@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="Back to top">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://github.com/iwb5820/2022/12/01/Markdown/%E5%B5%8C%E5%85%A5%E5%BC%8F/c%E8%AF%AD%E8%A8%80/C%E5%9F%BA%E7%A1%80/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/iwb5820/images/avatar.gif">
+      <meta itemprop="name" content="WuBa">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="isolatany">
+      <meta itemprop="description" content="WuBa's Blog">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | isolatany">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-12-01 14:45:39" itemprop="dateCreated datePublished" datetime="2022-12-01T14:45:39+08:00">2022-12-01</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2022-09-22 19:33:42" itemprop="dateModified" datetime="2022-09-22T19:33:42+08:00">2022-09-22</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h3 id="C基础"><a href="#C基础" class="headerlink" title="C基础"></a>C基础</h3><h4 id="指针"><a href="#指针" class="headerlink" title="指针"></a>指针</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> a = <span class="number">65</span>;</span><br><span class="line">    <span class="type">int</span> addr;</span><br><span class="line">    addr = <span class="number">0x0061FF1C</span>;</span><br><span class="line">    <span class="comment">// addr = (int)&amp;a;   将a的地址传给addr， &amp;a是地址值，addr是整数类型，(int)强制转换可去除警告</span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;0x%p, 0x%p, 0x%p\n&quot;</span>, &amp;a, addr, &amp;addr);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d, %d, 0x%p\n&quot;</span>, a, *&amp;a, *&amp;addr);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;0x%p\n&quot;</span>, (<span class="type">int</span> *)addr);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, *(<span class="type">int</span> *)addr);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*	输出结果</span></span><br><span class="line"><span class="comment">*	0x0061FF1C, 0x0061FF1C, 0x0061FF18</span></span><br><span class="line"><span class="comment">*	65, 65, 0x0061FF1C</span></span><br><span class="line"><span class="comment">*	0x0061FF1C</span></span><br><span class="line"><span class="comment">*	65</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="comment">/*	注解</span></span><br><span class="line"><span class="comment">*	%p用于输出16进制数，0x标注16进制数</span></span><br><span class="line"><span class="comment">*	&amp;取地址运算符，*解引用运算符</span></span><br><span class="line"><span class="comment">*	*&amp;a=a; </span></span><br><span class="line"><span class="comment">*	*(常量)无法使用，应用强制转换 (int *)常量， 将常量转化为地址，输出该地址所存的内容</span></span><br><span class="line"><span class="comment">*	**(常量)无法使用， 应用强制转换 *(int *)常量， 如果上述内容为某变量的地址，则输出该变量</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">*	定义一种变量，使他的存储类型是地址， 要使(int *)addr中的addr存储地址，就要用 &quot;int *&quot; 声明addr</span></span><br><span class="line"><span class="comment">*	int *addr;  此刻addr输出地址，*addr输出地址里面的值</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> a = <span class="number">65</span>;</span><br><span class="line">    <span class="type">int</span> *p;</span><br><span class="line">    p = &amp;a;</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;0x%p, 0x%p, 0x%p\n&quot;</span>, &amp;a, &amp;p, p);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d, %d, %d\n&quot;</span>, a, *&amp;a, *p);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*	输出结果</span></span><br><span class="line"><span class="comment">*	0x0061FF1C, 0x0061FF18, 0x0061FF1C</span></span><br><span class="line"><span class="comment">*	65, 65, 65</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//验证</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">char</span> a = <span class="string">&#x27;B&#x27;</span>;</span><br><span class="line">    <span class="type">int</span> addr;</span><br><span class="line">    addr = (<span class="type">int</span>)&amp;a;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;0x%p, 0x%p, 0x%p\n&quot;</span>, &amp;a, addr, (<span class="type">char</span> *)addr); <span class="comment">//(char *)addr转换为地址类型</span></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%c, %c, %c\n&quot;</span>, a, *&amp;a, *(<span class="type">char</span> *)addr);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//验证</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">char</span> c = <span class="string">&#x27;B&#x27;</span>;</span><br><span class="line">    <span class="type">char</span> *p;	</span><br><span class="line">    p = &amp;c;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;0x%p, 0x%p, 0x%p\n&quot;</span>, &amp;c, &amp;p, p);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%c, %c, %c\n&quot;</span>, c, *&amp;c, *p);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">*	定义一种变量，使他的存储类型是地址， 要使(char *)addr中的addr存储地址，就要用 &quot;char *&quot; 声明addr</span></span><br><span class="line"><span class="comment">*	char *addr;  此刻addr输出地址，*addr输出地址里面的值</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">*	0x0061FF1F, 0x0061FF18, 0x0061FF1F	</span></span><br><span class="line"><span class="comment">*	B, B, B</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">pencil</span> &#123;</span></span><br><span class="line">    <span class="type">int</span> hardness;</span><br><span class="line">    <span class="type">char</span> marker;</span><br><span class="line">    <span class="type">int</span> number;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">pencil</span> <span class="title">p</span>[3];</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">pencil</span> *<span class="title">pen</span>;</span> </span><br><span class="line">    p[<span class="number">0</span>].hardness = <span class="number">2</span>; p[<span class="number">0</span>].marker = <span class="string">&quot;F&quot;</span>; p[<span class="number">0</span>].number = <span class="number">485</span>;</span><br><span class="line">    p[<span class="number">1</span>].hardness = <span class="number">0</span>; p[<span class="number">1</span>].marker = <span class="string">&quot;G&quot;</span>; p[<span class="number">1</span>].number = <span class="number">38</span>;</span><br><span class="line">    p[<span class="number">2</span>].hardness = <span class="number">3</span>; p[<span class="number">2</span>].marker = <span class="string">&quot;E&quot;</span>; p[<span class="number">2</span>].number = <span class="number">108</span>;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;Hardness Marker Number \n&quot;</span>);</span><br><span class="line">    <span class="keyword">for</span>( pen=p; pen&lt;=p+<span class="number">2</span>; ++pen) </span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%4d%8c%8d\n&quot;</span>,(*pen).hardness, (*pen).marker, (*pen).number); </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125; </span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">*	Hardness Marker Number</span></span><br><span class="line"><span class="comment">*	  2       D     485</span></span><br><span class="line"><span class="comment">* 	  0       F      38</span></span><br><span class="line"><span class="comment">*	  3       H     108</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">*	*pen代表p[]的第一个位置</span></span><br><span class="line"><span class="comment">*	pen寻址一次是移动9个位置，%4d中间的数值是补空</span></span><br><span class="line"><span class="comment">*	&quot;.&quot;运算优先级高于“*”</span></span><br><span class="line"><span class="comment">*	(*pen).hardness 可简化为 pen-&gt;haedness</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>大端存储和小端存储的差别</li>
+</ul>
+<p>​        在寄存器中，一个字的表示是右边应该属于低位， 左边属于高位，如果寄存器的高位和内存中的高地址相对应，低位和内存的低地址相对应，那么称为小端存储。</p>
+<h4 id="内存分配"><a href="#内存分配" class="headerlink" title="内存分配"></a>内存分配</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;malloc.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">char</span> *p, *q;</span><br><span class="line">    p = q = (<span class="type">char</span> *) <span class="built_in">malloc</span>(<span class="number">100</span>);</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%s&quot;</span>, q);</span><br><span class="line">    <span class="keyword">while</span>(*p != <span class="string">&#x27;\0&#x27;</span>)</span><br><span class="line">        p++;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>, p-q);</span><br><span class="line">    <span class="built_in">free</span>(q);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*	输出结果</span></span><br><span class="line"><span class="comment">*	nice</span></span><br><span class="line"><span class="comment">*	4</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+<h4 id="一维数值数组"><a href="#一维数值数组" class="headerlink" title="一维数值数组"></a>一维数值数组</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> i = <span class="number">0</span>, a[<span class="number">3</span>] = &#123;<span class="number">2</span>, <span class="number">4</span>, <span class="number">6</span>&#125;;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%#p %#p %#p\n&quot;</span>, a, &amp;a, &amp;a[<span class="number">0</span>]);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%#p\n&quot;</span>, &amp;i);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>; i&lt;<span class="number">3</span>; i++)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%#p &quot;</span>, &amp;a[i]);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>; i&lt;<span class="number">3</span>; i++)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%#p &quot;</span>, a+i);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>; i&lt;<span class="number">3</span>; i++)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%#p &quot;</span>, &amp;a+i);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/* 输出结果</span></span><br><span class="line"><span class="comment">*	0X0061FF10 0X0061FF10 0X0061FF10</span></span><br><span class="line"><span class="comment">*	0X0061FF1C</span></span><br><span class="line"><span class="comment">*	0X0061FF10 0X0061FF14 0X0061FF18</span></span><br><span class="line"><span class="comment">*	0X0061FF10 0X0061FF14 0X0061FF18</span></span><br><span class="line"><span class="comment">*	0X0061FF10 0X0061FF1C 0X0061FF28</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> i = <span class="number">0</span>, a[<span class="number">3</span>], b[<span class="number">3</span>];</span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>; i&lt;<span class="number">3</span>; i++)&#123;</span><br><span class="line">        a[i] = i + <span class="number">50</span>;</span><br><span class="line">        *(b + i) = i + <span class="number">50</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d %d\n&quot;</span>, a[<span class="number">0</span>], *a);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>; i&lt;<span class="number">3</span>; i++)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, a[i]);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(i=<span class="number">0</span>; i&lt;<span class="number">3</span>; i++)</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, *(b + i));</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">/*输出结果</span></span><br><span class="line"><span class="comment">*	50 50</span></span><br><span class="line"><span class="comment">*	50 51 52</span></span><br><span class="line"><span class="comment">*	50 51 52</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure>
+<h4 id="传递"><a href="#传递" class="headerlink" title="传递"></a>传递</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="type">void</span> <span class="title function_">swap</span><span class="params">(<span class="type">int</span> *, <span class="type">int</span> *)</span>;</span><br><span class="line"><span class="type">int</span> <span class="title function_">main</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> a = <span class="number">55</span>, b = <span class="number">66</span>;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;&amp;a = %#p\t &amp;b = %#p\n&quot;</span>,&amp;a, &amp;b);</span><br><span class="line"></span><br><span class="line">    swap(&amp;a, &amp;b);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;aim data： a = %d, B = %d\n&quot;</span>, a, b);</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="type">void</span> <span class="title function_">swap</span><span class="params">(<span class="type">int</span> *p, <span class="type">int</span> *t)</span>&#123;</span><br><span class="line">    <span class="type">int</span> temp;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;&amp;p = %#p\t &amp;t = %#p\n&quot;</span>, &amp;p, &amp;t);</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot; p = %#p\t t = %#p\n&quot;</span>, p, t);</span><br><span class="line">    temp = *p;</span><br><span class="line">    *p = *t;</span><br><span class="line">    *t = temp;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;last data： a = %d, b = %d\n&quot;</span>, *p, *t);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">enum &#123;</span><br><span class="line">    OUT = 0,</span><br><span class="line">    IN = 1</span><br><span class="line">&#125;;</span><br><span class="line">int get_input(char c)&#123;</span><br><span class="line">    if(c &gt;= &#x27;a&#x27; &amp;&amp; c &lt;= &#x27;z&#x27;)</span><br><span class="line">        return IN;</span><br><span class="line">    if(c &gt;= &#x27;A&#x27;  &amp;&amp; c &lt;= &#x27;Z&#x27;)</span><br><span class="line">        return IN;</span><br><span class="line">    return OUT;</span><br><span class="line">&#125;</span><br><span class="line">int main() &#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/iwb5820/2022/12/01/Markdown/%E4%BA%BA%E9%99%85/%E6%BC%94%E8%AE%B2%E7%A8%BF/" rel="prev" title="">
+                  <i class="fa fa-chevron-left"></i> 
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/iwb5820/2022/12/01/Markdown/%E5%B5%8C%E5%85%A5%E5%BC%8F/c%E8%AF%AD%E8%A8%80/%E5%8D%8A%E6%88%90%E5%93%81%E7%9A%84%E4%BA%95%E5%AD%97%E6%A3%8B/" rel="next" title="半成品的井字棋">
+                  半成品的井字棋 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">WuBa</span>
+</div>
+
+    </div>
+  </footer>
+
+  
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/iwb5820/js/comments.js"></script><script src="/iwb5820/js/utils.js"></script><script src="/iwb5820/js/motion.js"></script><script src="/iwb5820/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/iwb5820/js/third-party/search/local-search.js"></script>
+
+  <script class="next-config" data-name="pdf" type="application/json">{"object_url":{"url":"https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.8/pdfobject.min.js","integrity":"sha256-tu9j5pBilBQrWSDePOOajCUdz6hWsid/lBNzK4KgEPM="},"url":"/iwb5820/lib/pdf/web/viewer.html"}</script>
+  <script src="/iwb5820/js/third-party/tags/pdf.js"></script>
+
+  <script class="next-config" data-name="mermaid" type="application/json">{"enable":true,"theme":{"light":"default","dark":"dark"},"js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mermaid/9.1.7/mermaid.min.js","integrity":"sha256-G58AID1YoX5YaEtWfXSI0VLrZ6N4kvNvwg0BI8zUFxE="}}</script>
+  <script src="/iwb5820/js/third-party/tags/mermaid.js"></script>
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/iwb5820/js/third-party/math/mathjax.js"></script>
+
+
+
+</body>
+</html>

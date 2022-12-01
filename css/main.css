@@ -1401,6 +1401,7 @@ pre code {
   color: #f00;
   display: inline-block;
   margin: 0 5px;
+  animation: icon-animate 1.33s ease-in-out infinite;
 }
 @keyframes icon-animate {
   0%, 100% {
@@ -2252,7 +2253,7 @@ mjx-container[display='true'] + br {
 .main-inner {
   border-radius: initial;
   box-sizing: border-box;
-  width: calc(100% - 252px);
+  width: calc(100% - 362px);
 }
 @media (max-width: 991px) {
   .main-inner {
@@ -2261,7 +2262,7 @@ mjx-container[display='true'] + br {
   }
 }
 .footer-inner {
-  padding-left: 252px;
+  padding-left: 362px;
 }
 @media (max-width: 991px) {
   .footer-inner {
@@ -2271,7 +2272,7 @@ mjx-container[display='true'] + br {
   }
 }
 .column {
-  width: 240px;
+  width: 350px;
 }
 @media (max-width: 991px) {
   .column {

@@ -20,25 +20,52 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"github.com","root":"/iwb5820/","images":"/iwb5820/images","scheme":"Gemini","darkmode":false,"version":"8.13.2","exturl":false,"sidebar":{"position":"left","width":350,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/iwb5820/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/iwb5820/js/config.js"></script>
 
-    <meta name="description" content="WuBa&#39;s Blog">
-<meta property="og:type" content="website">
+    <meta name="description" content="生产实习笔记1. 第一天 第一步： 环境搭建  第二步：  ST：    意法半导体国产：CH32 MM32ARM：架构公司  A系列：处理器产品  R系列：军工  M系列：微控制器  32位处理器 最大寻址4G  103：M3内核 405： M4    第三步： 回顾IO作用   推挽    开漏    复用    模拟，上下拉      单片机运行条件：  电源电路：供电电路—-3.3V(高)">
+<meta property="og:type" content="article">
 <meta property="og:title" content="isolatany">
-<meta property="og:url" content="https://github.com/iwb5820/index.html">
+<meta property="og:url" content="https://github.com/iwb5820/2022/12/01/Markdown/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="isolatany">
-<meta property="og:description" content="WuBa&#39;s Blog">
+<meta property="og:description" content="生产实习笔记1. 第一天 第一步： 环境搭建  第二步：  ST：    意法半导体国产：CH32 MM32ARM：架构公司  A系列：处理器产品  R系列：军工  M系列：微控制器  32位处理器 最大寻址4G  103：M3内核 405： M4    第三步： 回顾IO作用   推挽    开漏    复用    模拟，上下拉      单片机运行条件：  电源电路：供电电路—-3.3V(高)">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://github.com/iwb5820/2022/12/01/Markdown/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220906151310493.png">
+<meta property="og:image" content="https://github.com/iwb5820/2022/12/01/Markdown/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220906152403335.png">
+<meta property="og:image" content="https://github.com/iwb5820/2022/12/01/Markdown/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220906153714101.png">
+<meta property="og:image" content="https://github.com/iwb5820/2022/12/01/Markdown/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220906170657532.png">
+<meta property="og:image" content="https://github.com/iwb5820/2022/12/01/Markdown/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220906170709273.png">
+<meta property="og:image" content="https://github.com/iwb5820/2022/12/01/Markdown/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220906170829216.png">
+<meta property="og:image" content="https://github.com/iwb5820/2022/12/01/Markdown/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220907160745245.png">
+<meta property="og:image" content="https://github.com/iwb5820/2022/12/01/Markdown/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220913151602440.png">
+<meta property="og:image" content="https://github.com/iwb5820/2022/12/01/Markdown/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220913160200763.png">
+<meta property="og:image" content="https://github.com/iwb5820/2022/12/01/Markdown/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220916140408441.png">
+<meta property="og:image" content="https://github.com/iwb5820/2022/12/01/Markdown/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220916145052687.png">
+<meta property="og:image" content="https://github.com/iwb5820/2022/12/01/Markdown/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220917011348457.png">
+<meta property="og:image" content="https://github.com/iwb5820/2022/12/01/Markdown/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220928012156886.png">
+<meta property="og:image" content="https://github.com/iwb5820/2022/12/01/Markdown/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220928012222672.png">
+<meta property="og:image" content="https://github.com/iwb5820/2022/12/01/Markdown/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220928012937763.png">
+<meta property="og:image" content="https://github.com/iwb5820/2022/12/01/Markdown/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220928013014104.png">
+<meta property="og:image" content="https://github.com/iwb5820/2022/12/01/Markdown/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220928013230410.png">
+<meta property="og:image" content="https://github.com/iwb5820/2022/12/01/Markdown/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220928013258544.png">
+<meta property="og:image" content="https://github.com/iwb5820/2022/12/01/Markdown/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220928013334910.png">
+<meta property="og:image" content="https://github.com/iwb5820/2022/12/01/Markdown/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220928013448222.png">
+<meta property="og:image" content="https://github.com/iwb5820/2022/12/01/Markdown/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220928013510582.png">
+<meta property="og:image" content="https://github.com/iwb5820/2022/12/01/Markdown/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220928013733292.png">
+<meta property="og:image" content="https://github.com/iwb5820/2022/12/01/Markdown/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220928013803080.png">
+<meta property="og:image" content="https://github.com/iwb5820/2022/12/01/Markdown/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220928013905172.png">
+<meta property="article:published_time" content="2022-12-01T06:45:40.102Z">
+<meta property="article:modified_time" content="2022-09-27T17:42:54.000Z">
 <meta property="article:author" content="WuBa">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/iwb5820/2022/12/01/Markdown/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/image-20220906151310493.png">
 
 
-<link rel="canonical" href="https://github.com/iwb5820/">
+<link rel="canonical" href="https://github.com/iwb5820/2022/12/01/Markdown/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"en","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://github.com/iwb5820/2022/12/01/Markdown/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/","path":"2022/12/01/Markdown/生产实习/生产实习笔记/","title":""}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>isolatany</title>
+<title> | isolatany</title>
   
 
 
@@ -77,7 +104,7 @@
 
     <a href="/iwb5820/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">isolatany</h1>
+      <p class="site-title">isolatany</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -130,7 +157,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -143,6 +170,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0"><span class="nav-number">1.</span> <span class="nav-text">生产实习笔记</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E7%AC%AC%E4%B8%80%E5%A4%A9"><span class="nav-number">1.1.</span> <span class="nav-text">1. 第一天</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E7%AC%AC%E4%BA%8C%E5%A4%A9"><span class="nav-number">1.2.</span> <span class="nav-text">2.第二天</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6"><span class="nav-number">1.2.1.</span> <span class="nav-text">创建文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BB%BA%E7%AB%8B%E5%B7%A5%E7%A8%8B"><span class="nav-number">1.2.2.</span> <span class="nav-text">建立工程</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0%E5%8A%9F%E8%83%BD%E5%8F%8A%E6%B3%A8%E6%84%8F%E8%A6%81%E7%82%B9"><span class="nav-number">1.2.3.</span> <span class="nav-text">实现功能及注意要点</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E7%AC%AC%E4%B8%89%E5%A4%A9"><span class="nav-number">1.3.</span> <span class="nav-text">3. 第三天</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8C%89%E9%94%AE%E6%93%8D%E4%BD%9C"><span class="nav-number">1.3.1.</span> <span class="nav-text">按键操作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E6%AD%A5%E9%AA%A4"><span class="nav-number">1.3.2.</span> <span class="nav-text">配置步骤</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%BA%90%E7%A0%81"><span class="nav-number">1.3.3.</span> <span class="nav-text">源码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B6%88%E6%8A%96%E7%89%88"><span class="nav-number">1.3.4.</span> <span class="nav-text">消抖版</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-%E7%AC%AC%E5%9B%9B%E5%A4%A9"><span class="nav-number">1.4.</span> <span class="nav-text">4.第四天</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#USART%E7%AE%80%E4%BB%8B"><span class="nav-number">1.4.1.</span> <span class="nav-text">USART简介</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%80%9A%E4%BF%A1%E6%96%B9%E5%BC%8F"><span class="nav-number">1.4.2.</span> <span class="nav-text">通信方式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%BA%90%E7%A0%81-1"><span class="nav-number">1.4.3.</span> <span class="nav-text">源码</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-%E7%AC%AC%E4%BA%94%E5%A4%A9"><span class="nav-number">1.5.</span> <span class="nav-text">5. 第五天</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#LCD%E9%A9%B1%E5%8A%A8"><span class="nav-number">1.5.1.</span> <span class="nav-text">LCD驱动</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%BA%90%E7%A0%81%E5%8D%87%E7%BA%A7"><span class="nav-number">1.5.2.</span> <span class="nav-text">源码升级</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-%E7%AC%AC%E5%85%AD%E5%A4%A9"><span class="nav-number">1.6.</span> <span class="nav-text">6. 第六天</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#SHT20"><span class="nav-number">1.6.1.</span> <span class="nav-text">SHT20</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#sht20%E6%BA%90%E6%96%87%E4%BB%B6"><span class="nav-number">1.6.2.</span> <span class="nav-text">sht20源文件</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%83%E5%A4%A9"><span class="nav-number">1.7.</span> <span class="nav-text">第七天</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%AD%A5%E8%BF%9B%E7%94%B5%E6%9C%BA%E6%BA%90%E7%A0%81"><span class="nav-number">1.7.1.</span> <span class="nav-text">步进电机源码</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E5%85%AB%E5%A4%A9"><span class="nav-number">1.8.</span> <span class="nav-text">第八天</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4"><span class="nav-number">1.8.1.</span> <span class="nav-text">服务器操作步骤</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B9%9D%E5%A4%A9"><span class="nav-number">1.9.</span> <span class="nav-text">第九天</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#esp8266%E6%BA%90%E7%A0%81"><span class="nav-number">1.9.1.</span> <span class="nav-text">esp8266源码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#QMsg%E6%BA%90%E7%A0%81"><span class="nav-number">1.9.2.</span> <span class="nav-text">QMsg源码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#USART2%E6%BA%90%E7%A0%81"><span class="nav-number">1.9.3.</span> <span class="nav-text">USART2源码</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E5%8D%81%E5%A4%A9"><span class="nav-number">1.10.</span> <span class="nav-text">第十天</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#hmacsha1%E6%BA%90%E7%A0%81"><span class="nav-number">1.10.1.</span> <span class="nav-text">hmacsha1源码</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%80%E5%A4%A9"><span class="nav-number">1.11.</span> <span class="nav-text">第十一天</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%93%8D%E4%BD%9C"><span class="nav-number">1.11.1.</span> <span class="nav-text">字符串操作</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E5%8D%81%E4%BA%8C%E5%A4%A9"><span class="nav-number">1.12.</span> <span class="nav-text">第十二天</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%9E%E7%8E%B0qt%E5%8A%9F%E8%83%BD%E7%9A%84keil-main-c"><span class="nav-number">1.12.1.</span> <span class="nav-text">实现qt功能的keil main.c</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E5%8D%81%E4%B8%89%E5%A4%A9"><span class="nav-number">1.13.</span> <span class="nav-text">第十三天</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%9C%80%E7%BB%88%E7%95%8C%E9%9D%A2"><span class="nav-number">1.13.1.</span> <span class="nav-text">最终界面</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E5%8D%81%E5%9B%9B%E5%A4%A9"><span class="nav-number">1.14.</span> <span class="nav-text">第十四天</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%98%BF%E9%87%8C%E4%BA%91%E6%93%8D%E4%BD%9C%E8%AF%A6%E7%BB%86%E6%AD%A5%E9%AA%A4"><span class="nav-number">1.14.1.</span> <span class="nav-text">阿里云操作详细步骤</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -191,1038 +219,17 @@
 
     </div>
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://github.com/iwb5820/2022/12/01/Markdown/%E7%A1%AC%E4%BB%B6/%E7%94%B5%E6%9C%BA%E7%B1%BB/FOC/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/iwb5820/images/avatar.gif">
-      <meta itemprop="name" content="WuBa">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="isolatany">
-      <meta itemprop="description" content="WuBa's Blog">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | isolatany">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/iwb5820/2022/12/01/Markdown/%E7%A1%AC%E4%BB%B6/%E7%94%B5%E6%9C%BA%E7%B1%BB/FOC/" class="post-title-link" itemprop="url">Untitled</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2022-12-01 14:45:40" itemprop="dateCreated datePublished" datetime="2022-12-01T14:45:40+08:00">2022-12-01</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-10-12 11:57:34" itemprop="dateModified" datetime="2022-10-12T11:57:34+08:00">2022-10-12</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="FOC"><a href="#FOC" class="headerlink" title="FOC"></a>FOC</h3>
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://github.com/iwb5820/2022/12/01/Markdown/%E7%A1%AC%E4%BB%B6/%E6%A8%A1%E6%8B%9F%E7%94%B5%E8%B7%AF/%E6%99%B6%E4%BD%93%E7%AE%A1%E5%9F%BA%E6%9C%AC%E7%89%B9%E6%80%A7/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/iwb5820/images/avatar.gif">
-      <meta itemprop="name" content="WuBa">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="isolatany">
-      <meta itemprop="description" content="WuBa's Blog">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | isolatany">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/iwb5820/2022/12/01/Markdown/%E7%A1%AC%E4%BB%B6/%E6%A8%A1%E6%8B%9F%E7%94%B5%E8%B7%AF/%E6%99%B6%E4%BD%93%E7%AE%A1%E5%9F%BA%E6%9C%AC%E7%89%B9%E6%80%A7/" class="post-title-link" itemprop="url">Untitled</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2022-12-01 14:45:40" itemprop="dateCreated datePublished" datetime="2022-12-01T14:45:40+08:00">2022-12-01</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-11-02 19:20:20" itemprop="dateModified" datetime="2022-11-02T19:20:20+08:00">2022-11-02</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="晶体管基本特性"><a href="#晶体管基本特性" class="headerlink" title="晶体管基本特性"></a>晶体管基本特性</h1><h2 id="1-工作状态判断"><a href="#1-工作状态判断" class="headerlink" title="1. 工作状态判断"></a>1. 工作状态判断</h2><hr>
-<ul>
-<li><strong>放大状态</strong>：</li>
-</ul>
-<script type="math/tex; mode=display">
-I_{BQ} = \beta I_{BQ}</script><p>此时<strong>发射结正偏，集电结反偏</strong>。</p>
-<hr>
-<ul>
-<li><strong>截至状态</strong>：</li>
-</ul>
-<script type="math/tex; mode=display">
-此时 {I_{BQ} \to 0} 导致 {I_{CQ} \to 0}</script><p>此时<strong>发射结0偏或反偏，集电结反偏</strong>。</p>
-<hr>
-<ul>
-<li><strong>饱和状态</strong>：</li>
-</ul>
-<script type="math/tex; mode=display">
-I_{CQ} < \beta I_{BQ} 且随U_{CEQ}变化。任何状态下，只要 U_{CEQ} < U_{CES},晶体管处于饱和状态</script><p>主要特征： I<sub>BQ </sub> 增大时不会导致 I<sub>CQ</sub> 增大</p>
-<p>一般情况认定<strong>发射结正偏，集电结反偏</strong>为饱和</p>
-<hr>
-<ul>
-<li><strong>倒置状态</strong>：</li>
-</ul>
-<p>此时<strong>发射结反偏，集电结正偏</strong>。（会使 &beta; 下降严重）</p>
-<hr>
-<p><img src="晶体管基本特性/image-20221031221027747.png" alt="image-20221031221027747"></p>
-<p><img src="晶体管基本特性/image-20221031220052941.png" alt="image-20221031220052941"></p>
-<p><img src="晶体管基本特性/image-20221031220859620.png" alt="image-20221031220859620"></p>
-<p>题目</p>
-<p><img src="晶体管基本特性/image-20221031221335440.png" alt="image-20221031221335440"><img src="晶体管基本特性/image-20221101184619900.png" alt="image-20221101184619900"></p>
-<p><img src="晶体管基本特性/image-20221102191404487.png" alt="image-20221102191404487"></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://github.com/iwb5820/2022/12/01/Markdown/%E7%A1%AC%E4%BB%B6/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E9%9A%94%E7%A6%BB/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/iwb5820/images/avatar.gif">
-      <meta itemprop="name" content="WuBa">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="isolatany">
-      <meta itemprop="description" content="WuBa's Blog">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | isolatany">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/iwb5820/2022/12/01/Markdown/%E7%A1%AC%E4%BB%B6/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E9%9A%94%E7%A6%BB/" class="post-title-link" itemprop="url">Untitled</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2022-12-01 14:45:40" itemprop="dateCreated datePublished" datetime="2022-12-01T14:45:40+08:00">2022-12-01</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-11-12 21:27:59" itemprop="dateModified" datetime="2022-11-12T21:27:59+08:00">2022-11-12</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="数字-模拟-隔离"><a href="#数字-模拟-隔离" class="headerlink" title="数字 模拟 隔离"></a>数字 模拟 隔离</h3><p>3.3V数字电源和3.3V模拟电源采用 ==磁珠隔离==  【BLM21PG221SN1D】</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://github.com/iwb5820/2022/12/01/Markdown/%E7%A1%AC%E4%BB%B6/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E6%8E%A7%E5%88%B6%E7%8E%AF%E8%B7%AF/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/iwb5820/images/avatar.gif">
-      <meta itemprop="name" content="WuBa">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="isolatany">
-      <meta itemprop="description" content="WuBa's Blog">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | isolatany">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/iwb5820/2022/12/01/Markdown/%E7%A1%AC%E4%BB%B6/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E6%8E%A7%E5%88%B6%E7%8E%AF%E8%B7%AF/" class="post-title-link" itemprop="url">Untitled</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2022-12-01 14:45:40" itemprop="dateCreated datePublished" datetime="2022-12-01T14:45:40+08:00">2022-12-01</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-11-14 14:15:47" itemprop="dateModified" datetime="2022-11-14T14:15:47+08:00">2022-11-14</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="电源系统框图"><a href="#电源系统框图" class="headerlink" title="电源系统框图"></a>电源系统框图</h3><pre class="mermaid">flowchart LR
-Vin--+--> 1((S)) --e--> H_s --> Vout_S 
-Vout_S-->2[\G_S/] -- - -->1((s))</pre>
-
-<script type="math/tex; mode=display">
-\frac{V_{out}(s)} {V_{in}(s)} = \frac{H(s)}{1 + H(s)G(s)}</script><script type="math/tex; mode=display">
-{V_{out}(s) = \lim_{V_{in}(s)\to 0}[\frac{H(s)}{1+G(s)H(s)}V_{in}(s)]}</script><script type="math/tex; mode=display">
-1+G(s)H(s) = 0 \to {\begin{cases} |G(s)H(s)| = 1 = 0dB\\ \angle G(s)H(s) = -180^\circ&\end{cases}} \to {-1}/{J_0}</script><h3 id="环路稳定性判据"><a href="#环路稳定性判据" class="headerlink" title="环路稳定性判据"></a>环路稳定性判据</h3><p><strong>奈奎斯特稳定性判据，当系统的相位裕量大于0度时，此系统是稳定的。</strong></p>
-<ol>
-<li>在穿越频率处，总开环系统要有大于30度的相位裕量；</li>
-<li>为防止-2增益斜率的电路相位快速变化，系统的开环增益曲线在穿越频率附近的增益斜率应为-1（ -20db/10倍频程)</li>
-<li>增益裕量是开环系统的模的度量，该变化可能导致曲线刚好通过-1 点。一般需要6db的增益裕量。</li>
-</ol>
-<blockquote>
-<p>备注：应当注意，并不是绝对要求开环增益曲线在穿越频率附近的增益斜率为必须为-1，但是由于-1增益斜率对应的相位曲线相位延迟较小，且变化相对缓慢，因此它能够保证，当某些环节的相位变化被忽略时，相位曲线仍将具有足够的相位裕量，使系统保持稳定。</p>
-</blockquote>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://github.com/iwb5820/2022/12/01/Markdown/%E7%A1%AC%E4%BB%B6/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E5%9F%BA%E7%A1%80/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/iwb5820/images/avatar.gif">
-      <meta itemprop="name" content="WuBa">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="isolatany">
-      <meta itemprop="description" content="WuBa's Blog">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | isolatany">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/iwb5820/2022/12/01/Markdown/%E7%A1%AC%E4%BB%B6/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90/%E5%BC%80%E5%85%B3%E7%94%B5%E6%BA%90%E5%9F%BA%E7%A1%80/" class="post-title-link" itemprop="url">Untitled</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2022-12-01 14:45:40" itemprop="dateCreated datePublished" datetime="2022-12-01T14:45:40+08:00">2022-12-01</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-11-02 22:12:20" itemprop="dateModified" datetime="2022-11-02T22:12:20+08:00">2022-11-02</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="开关电源基础"><a href="#开关电源基础" class="headerlink" title="开关电源基础"></a>开关电源基础</h3><hr>
-<p>定义脉冲占空比：$ D = \frac{T_{on}}{T}$</p>
-<p>T 表示开关S开关重复周期，$ T_{on} $ 表示开关S在一个开关周期中的导通时间。</p>
-<p>直流输出电压 $U_o$ 输出电压与输入电压 $U_i$ 的关系：$U_o = U_i * D$ </p>
-<hr>
-<h4 id="一、基本组成"><a href="#一、基本组成" class="headerlink" title="一、基本组成"></a>一、基本组成</h4><ol>
-<li>驱动器</li>
-<li>比较放大器</li>
-<li>信号源</li>
-<li>辅助电路 （ 过流过压保护，输入滤波，输出采样，功能指示）</li>
-</ol>
-<hr>
-<h4 id="二、开关电源特点"><a href="#二、开关电源特点" class="headerlink" title="二、开关电源特点"></a>二、开关电源特点</h4><div class="table-container">
-<table>
-<thead>
-<tr>
-<th style="text-align:center">开关电源的特点</th>
-<th style="text-align:center">具体内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">效率高</td>
-<td style="text-align:center">功率开关管工作在开关状态，功耗小效率高。工作频率高在20KHz以上（滤波元件数值减低）</td>
-</tr>
-<tr>
-<td style="text-align:center">重量轻</td>
-<td style="text-align:center">节省了大量漆包线与硅钢片，使重量体积大幅下降</td>
-</tr>
-<tr>
-<td style="text-align:center">稳压范围宽</td>
-<td style="text-align:center">合理设计电源可以使输出电压范围在 $\pm2\%$ 以下</td>
-</tr>
-<tr>
-<td style="text-align:center">安全可靠</td>
-<td style="text-align:center">可以方便的设置各种形式的保护电路，负载出现故障时可以切断电源保证功能可靠</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h4 id="三、开关电源分类"><a href="#三、开关电源分类" class="headerlink" title="三、开关电源分类"></a>三、开关电源分类</h4><pre class="mermaid">graph TD
-开关电源分类-->
-    按输出稳压控制方式-->PWM脉冲宽度调制
-    按输出稳压控制方式-->PFM脉冲频率调制
-    按输出稳压控制方式-->PSM脉冲调频调宽
-开关电源分类-->
-    按触发方式分类-->自激式开关电源
-    按触发方式分类-->它激式开关电源
-开关电源分类-->
-    按输出取样方式分类-->直接输出取样开关电源
-    按输出取样方式分类-->间接输出取样开关电源
-开关电源分类--> 
-    按其他方式分类--> 串联/并联
-    按其他方式分类--> 单端正/反激
-    按其他方式分类--> 半桥/全桥</pre>
-
-
-
-
-
-
-
-<p>​        开关电源的负载变化瞬态响应主要由输出端LC滤波器的特性决定，所以可以通过提高开关频率、降低输出滤波器LC的方法来改善瞬态响应特性。</p>
-<p>​        光电耦合器中三极管集电极电流 $I_C$ 的大小与光电二极管电流 $I_F$ 及光电耦合系数 $h$ 成正比： $I_C = h *I_F$ </p>
-<h4 id="四、主要技术指标"><a href="#四、主要技术指标" class="headerlink" title="四、主要技术指标"></a>四、主要技术指标</h4><div class="table-container">
-<table>
-<thead>
-<tr>
-<th style="text-align:center">技术指标</th>
-<th style="text-align:left">具体内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">输入电压变化范围</td>
-<td style="text-align:left">当输出电压保持固定时，输入电压的变化范围（表征适应外界变化的能力，电源使用范围）<br> 【取决于电源的误差放大、反馈调节电路的增益、占空比调节的范围】</td>
-</tr>
-<tr>
-<td style="text-align:center">输出内阻 $ R_o$</td>
-<td style="text-align:left">输出电压变化量 $\Delta U_o$ 与输出电流的变化量 $\Delta I_o$ 的比值。 $ R_o = \frac{\Delta U_o}{\Delta I_o} $ <br>【$R_o$ 越小代表电源输出电压随负载电流的变化越小，稳压性能越好】</td>
-</tr>
-<tr>
-<td style="text-align:center">效率 $\eta$</td>
-<td style="text-align:left">电源输出功率$P_o$与输入功率$P_i$的比值。$\eta  = \frac{P_o}{P_i}$ <br>【$\eta $ 越高，体积越小，可靠性越高】</td>
-</tr>
-<tr>
-<td style="text-align:center">输出纹波电压</td>
-<td style="text-align:left">表示方法：输出纹波有效值。输出纹波电压的峰峰值$U_{pp}$<br>【纹波电压越小，电源输出性能越好】</td>
-</tr>
-<tr>
-<td style="text-align:center">输出电压调节范围</td>
-<td style="text-align:left">输出电压取决于基准电压和取样电路的元件参数。<br>【反映在开关管调整脉冲占空比D的变化范围】</td>
-</tr>
-<tr>
-<td style="text-align:center">输出电压稳定性</td>
-<td style="text-align:left">输出电压随负载变化而变化的特性。（取决于反馈调节回路的增益及频率响应特性）<br>【反馈调节回路增益越高，基准电压$U_E$越稳定，输出电压$U_o$的稳定性就越好】</td>
-</tr>
-<tr>
-<td style="text-align:center">输出功率$P_o$</td>
-<td style="text-align:left">电源能输出给负载的最大功率，与负载功率有关，要求存在 20-50%裕量</td>
-</tr>
-</tbody>
-</table>
-</div>
-<h5 id="串联开关电源示意"><a href="#串联开关电源示意" class="headerlink" title="串联开关电源示意"></a>串联开关电源示意</h5><pre class="mermaid">graph LR
-220V
-整流滤波--> 开关元件-->脉冲整流滤波-->输出电压
-基准电压-->误差放大器-->脉宽调制-->开关元件
-脉冲整流滤波-->取样电路-->误差放大器
-地</pre>
-
-<p>存在问题：</p>
-<ol>
-<li>输入输出不隔离，使电路板底板带电，使用不安全</li>
-<li>功率开关管串联在输入$U_i$和输出$U_o$之间，对开关管耐压要求低</li>
-</ol>
-<h5 id="并联开关电源示意"><a href="#并联开关电源示意" class="headerlink" title="并联开关电源示意"></a>并联开关电源示意</h5><pre class="mermaid">graph LR
-220V
-储能电感-->脉冲整流滤波-->输出电压
-整流滤波-->储能电感--> 开关元件-->脉冲整流滤波
-
-基准电压-->误差放大器-->脉宽调制-->开关元件
-脉冲整流滤波-->取样电路-->误差放大器
-地</pre>
-
-
-
-<ol>
-<li><p>输出电压：$U_o = U_i \frac{1}{1-D}$</p>
-</li>
-<li><p>储能电感：可以转化为变压器耦合并联开关电源【变压器初级次级相互隔离，电路地分开，使次级侧电路地不带电，使用安全】</p>
-<p>【冷底板供电】</p>
-</li>
-<li><p>并联开关电源中对开关管耐压要求较高</p>
-</li>
-</ol>
-<h4 id="五、开关电源技术要点"><a href="#五、开关电源技术要点" class="headerlink" title="五、开关电源技术要点"></a>五、开关电源技术要点</h4><ol>
-<li>主开关电源</li>
-<li>副电源</li>
-<li>辅助电路</li>
-</ol>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://github.com/iwb5820/2022/12/01/Markdown/%E7%A1%AC%E4%BB%B6/PCB%E7%BB%98%E5%9B%BE/cadence/PCB%20Editor%20%E5%9F%BA%E7%A1%80/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/iwb5820/images/avatar.gif">
-      <meta itemprop="name" content="WuBa">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="isolatany">
-      <meta itemprop="description" content="WuBa's Blog">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | isolatany">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/iwb5820/2022/12/01/Markdown/%E7%A1%AC%E4%BB%B6/PCB%E7%BB%98%E5%9B%BE/cadence/PCB%20Editor%20%E5%9F%BA%E7%A1%80/" class="post-title-link" itemprop="url">Untitled</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2022-12-01 14:45:40" itemprop="dateCreated datePublished" datetime="2022-12-01T14:45:40+08:00">2022-12-01</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-11-12 17:00:22" itemprop="dateModified" datetime="2022-11-12T17:00:22+08:00">2022-11-12</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="软件介绍"><a href="#软件介绍" class="headerlink" title="软件介绍"></a>软件介绍</h3><p>名称： PCB Editor 17.4</p>
-<p>选择界面： Allegro PCB Designer </p>
-<p>新建 File / new    选择 Package symbol 填入器件名称 （VFQFPN36_6X6)</p>
-<p>路径选择 ： Browse  —-&gt; my_lib</p>
-<p>修改单位： Setup / Design Parameter Editor  / design  </p>
-<blockquote>
-<p> 选择毫米 四位精度.设置坐标 x-100，y-100</p>
-</blockquote>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://github.com/iwb5820/2022/12/01/Markdown/%E7%A1%AC%E4%BB%B6/PCB%E7%BB%98%E5%9B%BE/cadence/Padstack%20Editor%20%E5%9F%BA%E7%A1%80/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/iwb5820/images/avatar.gif">
-      <meta itemprop="name" content="WuBa">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="isolatany">
-      <meta itemprop="description" content="WuBa's Blog">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | isolatany">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/iwb5820/2022/12/01/Markdown/%E7%A1%AC%E4%BB%B6/PCB%E7%BB%98%E5%9B%BE/cadence/Padstack%20Editor%20%E5%9F%BA%E7%A1%80/" class="post-title-link" itemprop="url">Untitled</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2022-12-01 14:45:40" itemprop="dateCreated datePublished" datetime="2022-12-01T14:45:40+08:00">2022-12-01</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-11-12 16:05:11" itemprop="dateModified" datetime="2022-11-12T16:05:11+08:00">2022-11-12</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="PCB组成"><a href="#PCB组成" class="headerlink" title="PCB组成"></a>PCB组成</h3><blockquote>
-<p>焊盘   Padstack Editor 17.4</p>
-<p>封装   PCB Editor 17.4</p>
-</blockquote>
-<h3 id="基本"><a href="#基本" class="headerlink" title="基本"></a>基本</h3><ol>
-<li>Thru Pin 通孔</li>
-<li>SMD Pin 贴片</li>
-<li>Via 过孔</li>
-<li>BBVia 盲埋孔</li>
-<li>Microvia  微孔  （小于0.1mm的盲埋孔）</li>
-<li>Slot 槽孔 </li>
-</ol>
-<p>注意事项</p>
-<p>单位一般设置为 mm Millimeter </p>
-<p>进度设置为小数点后四位</p>
-<h4 id="Drill-钻孔设置"><a href="#Drill-钻孔设置" class="headerlink" title="Drill 钻孔设置"></a>Drill 钻孔设置</h4><p>Finished diameter 完成后的钻孔直径   </p>
-<h4 id="Secondary-Drill-设置"><a href="#Secondary-Drill-设置" class="headerlink" title="Secondary Drill   设置"></a>Secondary Drill   设置</h4><p>Backdrill 背钻 </p>
-<h4 id="Drill-Symbol-设置"><a href="#Drill-Symbol-设置" class="headerlink" title="Drill Symbol 设置"></a>Drill Symbol 设置</h4><p>钻孔的符号精度等设置</p>
-<h4 id="Drill-Offset-设置"><a href="#Drill-Offset-设置" class="headerlink" title="Drill Offset 设置"></a>Drill Offset 设置</h4><p>设置中心偏移量</p>
-<h4 id="Design-Layers-设置"><a href="#Design-Layers-设置" class="headerlink" title="Design Layers 设置"></a>Design Layers 设置</h4><ol>
-<li>层设置  焊盘所在层，开始层 、中间层、结束层</li>
-<li>焊盘设置  普通焊盘、 热焊盘、 反焊盘</li>
-</ol>
-<h4 id="Mask-Layers-设置"><a href="#Mask-Layers-设置" class="headerlink" title="Mask Layers 设置"></a>Mask Layers 设置</h4><p>阻焊和钢网设置</p>
-<h3 id="PCB封装组成元素"><a href="#PCB封装组成元素" class="headerlink" title="PCB封装组成元素"></a>PCB封装组成元素</h3><ol>
-<li>沉板开孔尺寸</li>
-<li>尺寸标注</li>
-<li>倒角尺寸</li>
-<li>==焊盘==</li>
-<li>==阻焊==</li>
-<li>==孔径==</li>
-<li>花焊盘</li>
-<li>反焊盘 </li>
-<li>Pin_number</li>
-<li>Pin 间距</li>
-<li>Pin 跨距</li>
-<li>==丝印线==</li>
-<li>装配线</li>
-<li>禁止布线区</li>
-<li>==装配线==</li>
-<li>禁止布线区</li>
-<li>禁止布孔区</li>
-<li>==位号字符==</li>
-<li>装配字符</li>
-<li>==1脚标识==</li>
-<li>==安装标识==</li>
-<li>==占地面积==</li>
-<li>==器件最大高度==</li>
-<li>==极性标识==</li>
-</ol>
-<h3 id="操作步骤"><a href="#操作步骤" class="headerlink" title="操作步骤"></a>操作步骤</h3><ol>
-<li>start下选择  孔类型和焊盘风格</li>
-<li>Design Layers下 选择 SOLDERMASK_TOP 尺寸和 PASTEMASK_TOP尺寸</li>
-<li>另存到自定义目录</li>
-<li>保存名称 SOB0R45X0R45.pad      (SMD OBLONG 0.45mm * 0.45mm )</li>
-</ol>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://github.com/iwb5820/2022/12/01/Markdown/%E7%A1%AC%E4%BB%B6/PCB%E7%BB%98%E5%9B%BE/cadence/Capture%E5%9F%BA%E7%A1%80/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/iwb5820/images/avatar.gif">
-      <meta itemprop="name" content="WuBa">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="isolatany">
-      <meta itemprop="description" content="WuBa's Blog">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | isolatany">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/iwb5820/2022/12/01/Markdown/%E7%A1%AC%E4%BB%B6/PCB%E7%BB%98%E5%9B%BE/cadence/Capture%E5%9F%BA%E7%A1%80/" class="post-title-link" itemprop="url">Untitled</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2022-12-01 14:45:40" itemprop="dateCreated datePublished" datetime="2022-12-01T14:45:40+08:00">2022-12-01</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-11-11 12:12:58" itemprop="dateModified" datetime="2022-11-11T12:12:58+08:00">2022-11-11</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="软件基本"><a href="#软件基本" class="headerlink" title="软件基本"></a>软件基本</h3><blockquote>
-<p> 名称：Capture CIS 17.4</p>
-<p>作用： 绘图工具，用于原理图库和原理图设计</p>
-<p>软件选择： ==OrCAD Capture CIS==</p>
-</blockquote>
-<h3 id="设计流程"><a href="#设计流程" class="headerlink" title="设计流程"></a>设计流程</h3><ol>
-<li>资料准备</li>
-<li>网表调入</li>
-<li>结构导入</li>
-<li>项目分析</li>
-<li>模块抓取</li>
-<li>结构器件布局</li>
-<li>关键器件布局</li>
-<li>分模块化布局</li>
-<li>布局优化</li>
-<li>层叠设置</li>
-<li>规则设置</li>
-<li>Class设置</li>
-<li>布线</li>
-<li>绕线等长</li>
-<li>布线优化</li>
-<li>电源处理</li>
-<li>DRC检查</li>
-<li>丝印处理</li>
-<li>项目检查</li>
-<li>光绘输出</li>
-<li>光绘检查</li>
-<li>文件归档</li>
-<li>项目结束</li>
-</ol>
-<h4 id="颜色设置"><a href="#颜色设置" class="headerlink" title="颜色设置"></a>颜色设置</h4><p>Options —-&gt; Preferences</p>
-<ul>
-<li>[ ] 代表PDF输出内容</li>
-</ul>
-<hr>
-<h4 id="格点设置"><a href="#格点设置" class="headerlink" title="格点设置"></a>格点设置</h4><p>Schematic Page Grid  原理图格点</p>
-<p>Part and Symbol Grid 元件库格点</p>
-<p>推荐用 ==Lines== 线状格点</p>
-<p>pin to pin 一个格点对应一根线</p>
-<p>Pointer snap to Grid 抓取格点开关</p>
-<hr>
-<h3 id="库介绍"><a href="#库介绍" class="headerlink" title="库介绍"></a>库介绍</h3><h4 id="库路径"><a href="#库路径" class="headerlink" title="库路径"></a>库路径</h4><blockquote>
-<p>cadence /  SPB_17.4 / tools / capture / library </p>
-<p>文件后缀： * .olb</p>
-</blockquote>
-<h4 id="库名称"><a href="#库名称" class="headerlink" title="库名称"></a>库名称</h4><ol>
-<li>AMPLIFIER. 0LB共182个零件，存放模拟放大器IC，如CA3280， TL027C， EL4093;</li>
-<li>ARITHMETIC. 0LB共182个零件，存放逻辑运算IC，如TC4032B， 74LS85等 ;</li>
-<li>ATOD. 0LB共618个零件，存放A/D转换IC，如ADC0804， TC7109等 ;</li>
-<li>BUS DRIVERTRANSCEIVER. 0LB共632个零件，存放汇流排驱动IC，如74LS244， 74LS373 .等数字IC;</li>
-<li>==CAPSYM. 0LB共35个零件，存放电源，地，输入输出口，标题栏等;==</li>
-<li>==CONNECTOR. OLB共816个零件，存放连接器，如4 HEADER, CON AT62，RCA JACK;==</li>
-<li>COUNTER. 0LB共182个零件， 存放计数器IC,如74LS90， CD4040B;</li>
-<li>==DISCRETE. 0LB共872个零件， 存放分立式元件，如电阻，电容，电感，开关，变压器等常用零件;==</li>
-<li>DRAM. OLB共623个零件，存放动态存储器，如TMS44C256， MN- 10等;</li>
-<li>ELECTRO MECHANICAL. 0LB共6个零件， 存放马达，断路器等电机类元件;</li>
-<li>FIF0.0LB共177个零件， 存放先进先出资料暂存器，如，SN74LS232; </li>
-<li>FILTRE. 0LB共80个零件， 存放滤波器类元件，如MAX270， LTC1065等;</li>
-<li>FPGA. 0LB存 放可编程逻辑器件，如XC6216/LCC;</li>
-<li>GATE. 0LB共691个零件， 存放逻辑门(含CMOS和TLL) ;</li>
-<li>LATCH. 0LB共305个零件， 存放锁存器，如4013， 74LS73， 74LS76等;</li>
-<li>LINE DRIVER RECEIVER. 0LB共380个零件， 存放线控驱动与接收器。如SN, DS275;</li>
-<li>MECHANICAL. 0LB共110个零件， 存放机构图件，如M HOLE 2，PGASOC-15-F等;</li>
-<li>MICROCONTROLLER. 0LB共523个零件， 存放单晶片微处理器，如68HC11， AT89C51;</li>
-<li>MICRO PROCESSOR. 0LB共288个零件， 存放微处理器;</li>
-<li>MISC. 0LB共1567个零件， 存放杂项图件，如电表(METER MA)，微处理器周边(Z80-DMA)等未分类的零件;</li>
-</ol>
-<h4 id="元件库创建办法"><a href="#元件库创建办法" class="headerlink" title="元件库创建办法"></a>元件库创建办法</h4><ol>
-<li>File —&gt; new —&gt; Library    (save as)此时为库名</li>
-<li>改文件名 （*.olb）</li>
-<li>放置矩形和pin  ，批量为 Place Pin Array （正负位序可调）</li>
-<li>Eidt Pin 统一修改Pin名称 和pin type属性（Power , 常规为 Passive ） </li>
-<li>修改元件名后保存  【路径：Design Resources / Library / 【自定义路径库】/ 元件名】</li>
-</ol>
-<h4 id="库的管理"><a href="#库的管理" class="headerlink" title="库的管理"></a>库的管理</h4><p>1、通过新建元器件库，保存在本地，积少很多，作为常用的本地库<br>2、添加平时网上收集的库以及系统自带的库，作为常用的本地库<br>3、通过原理图来获取元器件库，作为常用的本地库</p>
-<h4 id="关联PCB封装库"><a href="#关联PCB封装库" class="headerlink" title="关联PCB封装库"></a>关联PCB封装库</h4><ol>
-<li>PCB Footprint （封装名称）</li>
-<li>Reference （元件位号）</li>
-<li>Value (元件名称)</li>
-</ol>
-<h3 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h3><ol>
-<li>File —&gt; New —&gt; project  (设置name和path)</li>
-<li>工程文件【*.prj】,设计文件【*.dsn】</li>
-<li>PAGE 名称更改 ，选择 Schematic Page Properties</li>
-</ol>
-<h3 id="原理图信号联通"><a href="#原理图信号联通" class="headerlink" title="原理图信号联通"></a>原理图信号联通</h3><ol>
-<li><p>导线连接</p>
-</li>
-<li><p>网表符号连接</p>
-</li>
-<li><p>分页符连接</p>
-<p>分页符使用方法： Place / Off-Page Connector</p>
-</li>
-</ol>
-<h3 id="电源、地联通"><a href="#电源、地联通" class="headerlink" title="电源、地联通"></a>电源、地联通</h3><p>1、系统自带电源/地连接符的库，不用添加，直接点击放置电源/地的按钮放置;<br>2、电源/地是全局变量，不同的页面也可以进行连接，不用添加分页符;<br>3、自定义电源/地连接符的Name名称，即可将原理图上电源/地全部联通。</p>
-<h3 id="添加BUS总线"><a href="#添加BUS总线" class="headerlink" title="添加BUS总线"></a>添加BUS总线</h3><p>1、总线代表的是具有相同电气特性的一-组导线，在具有相同电气特性的导线数目较多的情况下，可采用总线的方式;<br>2、点击键盘的B键放置总线，或者使用菜单栏中的Place- Bus功能,添加总线;<br>3、总线命名与网络标号的命名命令类似，通过点击N键或者或者点击菜单栏的Place- -Net Alias.. 命令可放置<br>网络标号。放置总线时的须注意:<br>●总线的名字不能是以数字结尾的;<br>●符号[ ]前后不能有空格;<br>●命名必须是名字加[ ]，如BUS[0:15]， BUS[0-15], BUS[0… 15]注意要有三点，三种中的一种;<br>4、信号线与总线的连接采用的是总线入口的方式，通过点击键盘的E键或者点击菜单栏中的Place- -Bug 命令。</p>
-<h3 id="添加差分属性"><a href="#添加差分属性" class="headerlink" title="添加差分属性"></a>添加差分属性</h3><p>1、鼠标左键单击选中一页原理图，然后执行菜单命令“Tools-Create Differential Pair…”<br>2、在弹出的Create Differential Pair窗口中查找需要设置的网络名并添加到Selections中;<br>3、在①箭头处输入需要查找的大概网络名;<br>4、在②箭头处选择具体对应的网络名;<br>5、点击③箭头处的符号即可添加到Selections中;<br>6、点击④箭头处的Create即可自动创建好差分类。</p>
-<h3 id="FootPrint处理"><a href="#FootPrint处理" class="headerlink" title="FootPrint处理"></a>FootPrint处理</h3><p>双击 更改 PCB Footprint （填名称）</p>
-<h3 id="DRC检查"><a href="#DRC检查" class="headerlink" title="DRC检查"></a>DRC检查</h3><p>PCB / Design Rules Check</p>
-<ol>
-<li>Check single node nets: 检查设计中的单端网络;</li>
-<li>Check no drivingsource and pintype…::检查器件属性无源管脚与有源管脚的连接是否正</li>
-<li>Check duplicate net name :检查重复的网络名称;</li>
-<li>Check off- page connector connect:检:测分页图纸间接口的连接性;</li>
-<li>Check hierarchical port connection: 检测阶层端口的连接性;</li>
-<li>Check unconnected bus net: 检测没有连接的总线网络;</li>
-<li>Check unconnected pins: 检查没有连接的管脚;</li>
-<li>Check power pin visible: 检测电源属性的管脚是否显示了管脚名称与编号;</li>
-<li>Check missing/illegal PCB Footprint: 检测封装名称是否填写。是否含有非法字符;</li>
-<li>CheckNormalconvertviewsystem:检测—个部件的正常视图上的pin号是否与转换视图上的</li>
-<li>Check incorrect pin group assi gnment: 检查同一个Pin Group的所有插脚是否有相同的类型</li>
-<li>Check high speed props syntax: 在设计中检查网络高速属性的语法是否正确;</li>
-<li>Check missing pin number: 检测缺失管脚编号的管脚;</li>
-<li>Checkdevicewithzeropins::检测设计中是否含有零宽度的管脚;</li>
-<li>Checkpowergroundshort:检测一个Part内部的电源网络名称是否有两个不同的网络标号名</li>
-<li>Check Name Propconsistency:检测层次原理结构中是否含有相同的网络名称;</li>
-<li>Report all net name: 报告所有网络的名称;</li>
-<li>Report off- grid object: 报告不在格点上是器件;</li>
-<li>Report hierarchical ports and off-page connection: 报告阶层端口和分页图纸间接口的连</li>
-<li>Report Misleading Tap Connection: 报告易误解的连接。</li>
-<li>Report Visible unconnected powerpins:报告所有具有可见电源属性的管脚是否有连接;</li>
-<li>Report unused part packages: 报告原理图中未使用的器件part;</li>
-<li>Report invalid Refdes:报告原理图中无效的器件位号;</li>
-<li>Report identical part references: 报告原理图相同的位号。</li>
-</ol>
-<h3 id="原理图PDF输出"><a href="#原理图PDF输出" class="headerlink" title="原理图PDF输出"></a>原理图PDF输出</h3><h4 id="方法1"><a href="#方法1" class="headerlink" title="方法1"></a>方法1</h4><p>选中根目录   File / Export / PDF</p>
-<p>ERROR（- 43004）型错误是由于  Converter Path 中没有插件路径</p>
-<blockquote>
-<p>… / gs / gs9.20 / unindtgs.exe</p>
-</blockquote>
-<p>输出文件在SCH路径下   为 ==CapOutput.ps==, 选择PDF工具打开</p>
-<h4 id="方法2"><a href="#方法2" class="headerlink" title="方法2"></a>方法2</h4><p>虚拟打印机打印</p>
-<p>File / Print    选择setup —&gt;选择虚拟打印机 输出 * .pdf</p>
-<h3 id="BOM清单输出"><a href="#BOM清单输出" class="headerlink" title="BOM清单输出"></a>BOM清单输出</h3><p>1、选中根目录以后，执行菜单命令Tools-Bill .命 令，来进行BOM清单的输出;<br>2、在Header以及Combined Property String栏中，分别列出了需要输出的元素，依次是器件的数量、器件的位号、器件的属性值;<br>3、缺失器件的封装属性值，需要单独加上，格式就是跟Header以及Combined Property String栏致，勾选上==Open in Excel==, 这样输出BOM清单就用EXCEL表格打开了，进行编辑整理，得到需要的BOM清单。</p>
-<p>==Header下:  … \ tPCB Footprint==</p>
-<p>==Combined 下: …\t{PCB Footprint}==</p>
-<p>最后改为输出==*.xsl==</p>
-<h3 id="原理图输出各类网表"><a href="#原理图输出各类网表" class="headerlink" title="原理图输出各类网表"></a>原理图输出各类网表</h3><p>Capture输出    Tool / Create Netlist…</p>
-<ol>
-<li><p>第一方网表 allegro</p>
-<p>会创建allegro文件夹，包含五个文件</p>
-<ul>
-<li>netlist.log     配置文件 通过这个来对错误分析<ul>
-<li>pstchip.dat    网表</li>
-<li>pstnet.dat      网表</li>
-<li>pstxprt.dat     网表</li>
-</ul>
-</li>
-<li>pxlBA.txt       配置文件</li>
-</ul>
-</li>
-</ol>
-<ol>
-<li><p>第三方网表    orTelesis64.dll</p>
-<p>由于其中大量使用小数点表示  所以要PCB Footprint 去替换 Part Value</p>
-<ul>
-<li><p>Pads网表      orpads2k64.dll    可以不替代，且输出为  fxq.asc</p>
-</li>
-<li><p>AD网表     orprotel264.dll   可以不替代，且输出为  fxq.net</p>
-</li>
-</ul>
-</li>
-</ol>
-<h3 id="输出网表常见错误"><a href="#输出网表常见错误" class="headerlink" title="输出网表常见错误"></a>输出网表常见错误</h3><p>ORCAP-36041 重复网络名称</p>
-<p>ORCAP-36002 封装名缺失</p>
-<p>ORCAP-36022  管脚编号缺失</p>
-<p>ORCAP-36052 属性名称中含有回车</p>
-<p>ORCAP-36003 多Part器件属性冲突</p>
-<p>ORCAP-36055 非法字符</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
     <link itemprop="mainEntityOfPage" href="https://github.com/iwb5820/2022/12/01/Markdown/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1236,13 +243,13 @@ Vout_S-->2[\G_S/] -- - -->1((s))</pre>
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | isolatany">
+      <meta itemprop="name" content=" | isolatany">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/iwb5820/2022/12/01/Markdown/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0/%E7%94%9F%E4%BA%A7%E5%AE%9E%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="post-title-link" itemprop="url">Untitled</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -1272,7 +279,7 @@ Vout_S-->2[\G_S/] -- - -->1((s))</pre>
     
     
     <div class="post-body" itemprop="articleBody">
-          <h2 id="生产实习笔记"><a href="#生产实习笔记" class="headerlink" title="生产实习笔记"></a>生产实习笔记</h2><h3 id="1-第一天"><a href="#1-第一天" class="headerlink" title="1. 第一天"></a>1. 第一天</h3><ol>
+        <h2 id="生产实习笔记"><a href="#生产实习笔记" class="headerlink" title="生产实习笔记"></a>生产实习笔记</h2><h3 id="1-第一天"><a href="#1-第一天" class="headerlink" title="1. 第一天"></a>1. 第一天</h3><ol>
 <li><p>第一步： 环境搭建</p>
 </li>
 <li><p>第二步： </p>
@@ -1527,7 +534,6 @@ Vout_S-->2[\G_S/] -- - -->1((s))</pre>
 
 ![image-20220928014156229](生产实习笔记/image-20220928014156229.png)
 </code></pre>
-      
     </div>
 
     
@@ -1535,8 +541,21 @@ Vout_S-->2[\G_S/] -- - -->1((s))</pre>
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/iwb5820/2022/12/01/Markdown/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/%E6%8C%87%E4%BB%A4%E7%B3%BB%E7%BB%9F/" rel="prev" title="">
+                  <i class="fa fa-chevron-left"></i> 
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/iwb5820/2022/12/01/Markdown/%E7%A1%AC%E4%BB%B6/PCB%E7%BB%98%E5%9B%BE/cadence/Capture%E5%9F%BA%E7%A1%80/" rel="next" title="">
+                   <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
     </footer>
   </article>
 </div>
@@ -1544,94 +563,7 @@ Vout_S-->2[\G_S/] -- - -->1((s))</pre>
 
 
 
-    
 
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://github.com/iwb5820/2022/12/01/Markdown/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/%E6%8C%87%E4%BB%A4%E7%B3%BB%E7%BB%9F/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/iwb5820/images/avatar.gif">
-      <meta itemprop="name" content="WuBa">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="isolatany">
-      <meta itemprop="description" content="WuBa's Blog">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | isolatany">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/iwb5820/2022/12/01/Markdown/%E5%B5%8C%E5%85%A5%E5%BC%8F/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/%E6%8C%87%E4%BB%A4%E7%B3%BB%E7%BB%9F/" class="post-title-link" itemprop="url">Untitled</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2022-12-01 14:45:40" itemprop="dateCreated datePublished" datetime="2022-12-01T14:45:40+08:00">2022-12-01</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-11-12 11:26:51" itemprop="dateModified" datetime="2022-11-12T11:26:51+08:00">2022-11-12</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h3 id="汇编指令"><a href="#汇编指令" class="headerlink" title="汇编指令"></a>汇编指令</h3><h4 id="指令格式"><a href="#指令格式" class="headerlink" title="指令格式"></a>指令格式</h4><p>==&lt; opcode &gt; { &lt; cond &gt; } { S } &lt; Rd &gt;, &lt; Rn &gt; { , &lt; OP2 &gt; }==</p>
-<p>其中 &lt; &gt;中内容必不可少，{ }内容可省略</p>
-<ol>
-<li>&lt; opcode &gt;操作码，例如ADD表示算数加法</li>
-<li>{ &lt; cond&gt; } 指令执行的条件域， 如EQ， NE</li>
-<li>{ S }表示执行结果是否影响CPSR的值，使用后缀则影响</li>
-<li>&lt; Rd &gt; 表目的寄存器</li>
-<li>&lt; Rn &gt; 表示第一个操作数，为寄存器</li>
-<li>&lt; OP2 &gt; 表示第二个操作数，可以是立即数、寄存器或寄存器位移操作数</li>
-</ol>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-  <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/iwb5820/page/2/">2</a><a class="page-number" href="/iwb5820/page/3/">3</a><a class="extend next" rel="next" title="Next page" aria-label="Next page" href="/iwb5820/page/2/"><i class="fa fa-angle-right"></i></a>
-  </nav>
 
 </div>
   </main>
