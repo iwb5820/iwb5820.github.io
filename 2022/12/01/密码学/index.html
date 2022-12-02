@@ -20,15 +20,15 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"iwb5820.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.2","exturl":false,"sidebar":{"position":"left","width":350,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="密码学基本术语123RSA加密：密文 &#x3D; 明文 EmodN公钥 &#x3D; （E，N） 123RSA解密：明文 &#x3D; 密文 DmodN私钥 &#x3D; （D, N） 生成密匙对 （E, D, N）12345678910111213141516求NN &#x3D; p * q	&#x2F;&#x2F;求p，q两个质数的公倍数，一般取p乘q求LL &#x3D; (p-1, q-1)	&#x2F;&#x2F;求其最小公倍数求E1 &lt; E &lt; Lgcd (E, L) &#x3D;">
+    <meta name="description" content="密码学">
 <meta property="og:type" content="article">
 <meta property="og:title" content="密码学">
 <meta property="og:url" content="https://iwb5820.github.io/2022/12/01/%E5%AF%86%E7%A0%81%E5%AD%A6/index.html">
 <meta property="og:site_name" content="isolatany">
-<meta property="og:description" content="密码学基本术语123RSA加密：密文 &#x3D; 明文 EmodN公钥 &#x3D; （E，N） 123RSA解密：明文 &#x3D; 密文 DmodN私钥 &#x3D; （D, N） 生成密匙对 （E, D, N）12345678910111213141516求NN &#x3D; p * q	&#x2F;&#x2F;求p，q两个质数的公倍数，一般取p乘q求LL &#x3D; (p-1, q-1)	&#x2F;&#x2F;求其最小公倍数求E1 &lt; E &lt; Lgcd (E, L) &#x3D;">
+<meta property="og:description" content="密码学">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-12-01T08:25:50.393Z">
-<meta property="article:modified_time" content="2022-12-01T08:35:59.903Z">
+<meta property="article:modified_time" content="2022-12-02T07:37:32.535Z">
 <meta property="article:author" content="WuBa">
 <meta name="twitter:card" content="summary">
 
@@ -233,9 +233,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2022-12-01 16:25:50 / Modified: 16:35:59" itemprop="dateCreated datePublished" datetime="2022-12-01T16:25:50+08:00">2022-12-01</time>
+      <time title="Created: 2022-12-01 16:25:50" itemprop="dateCreated datePublished" datetime="2022-12-01T16:25:50+08:00">2022-12-01</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2022-12-02 15:37:32" itemprop="dateModified" datetime="2022-12-02T15:37:32+08:00">2022-12-02</time>
     </span>
 
   
@@ -248,7 +254,8 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="密码学"><a href="#密码学" class="headerlink" title="密码学"></a>密码学</h2><h4 id="基本术语"><a href="#基本术语" class="headerlink" title="基本术语"></a>基本术语</h4><figure class="highlight elm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">RSA</span>加密：</span><br><span class="line">密文 = 明文 <span class="type">EmodN</span></span><br><span class="line">公钥 = （<span class="type">E</span>，<span class="type">N</span>）</span><br></pre></td></tr></table></figure>
+        <h2 id="密码学"><a href="#密码学" class="headerlink" title="密码学"></a>密码学</h2><span id="more"></span>
+<h4 id="基本术语"><a href="#基本术语" class="headerlink" title="基本术语"></a>基本术语</h4><figure class="highlight elm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">RSA</span>加密：</span><br><span class="line">密文 = 明文 <span class="type">EmodN</span></span><br><span class="line">公钥 = （<span class="type">E</span>，<span class="type">N</span>）</span><br></pre></td></tr></table></figure>
 <figure class="highlight elm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">RSA</span>解密：</span><br><span class="line">明文 = 密文 <span class="type">DmodN</span></span><br><span class="line">私钥 = （<span class="type">D</span>, <span class="type">N</span>）</span><br></pre></td></tr></table></figure>
 <h4 id="生成密匙对-（E-D-N）"><a href="#生成密匙对-（E-D-N）" class="headerlink" title="生成密匙对 （E, D, N）"></a>生成密匙对 （E, D, N）</h4><figure class="highlight elm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">求<span class="type">N</span></span><br><span class="line"><span class="type">N</span> = p * q	//求p，q两个质数的公倍数，一般取p乘q</span><br><span class="line"></span><br><span class="line">求<span class="type">L</span></span><br><span class="line"><span class="type">L</span> = (p<span class="number">-1</span>, q<span class="number">-1</span>)	//求其最小公倍数</span><br><span class="line"></span><br><span class="line">求<span class="type">E</span></span><br><span class="line"><span class="number">1</span> &lt; <span class="type">E</span> &lt; <span class="type">L</span></span><br><span class="line"><span class="title">gcd</span> (<span class="type">E</span>, <span class="type">L</span>) = <span class="number">1</span>	//使<span class="type">E</span>和<span class="type">L</span>的最大工约数为<span class="number">1</span> (互质)</span><br><span class="line"></span><br><span class="line">求<span class="type">D</span></span><br><span class="line"><span class="number">1</span> &lt; <span class="type">D</span> &lt; <span class="type">L</span></span><br><span class="line"><span class="type">E</span> * <span class="type">D</span> mod <span class="type">L</span> = <span class="number">1</span></span><br><span class="line"></span><br><span class="line">解释为：((<span class="type">E</span> mod <span class="type">L</span>) * (<span class="type">D</span> mod <span class="type">L</span>)) mod <span class="type">L</span> = <span class="number">1</span></span><br><span class="line">其中 <span class="type">E</span> mod <span class="type">L</span> = <span class="number">1</span>  意为：<span class="type">E</span>除以<span class="type">L</span>余<span class="number">1</span></span><br></pre></td></tr></table></figure>
 

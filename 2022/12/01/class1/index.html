@@ -20,12 +20,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"iwb5820.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.2","exturl":false,"sidebar":{"position":"left","width":350,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="qt基础1.初始文件 class1.pro 文件   12345678910111213141516171819202122232425262728293031323334353637#-------------------------------------------------## Project created by QtCreator 2022-09-05T15:13:32##-----">
+    <meta name="description" content="qt基础">
 <meta property="og:type" content="article">
 <meta property="og:title" content="qt基础">
 <meta property="og:url" content="https://iwb5820.github.io/2022/12/01/class1/index.html">
 <meta property="og:site_name" content="isolatany">
-<meta property="og:description" content="qt基础1.初始文件 class1.pro 文件   12345678910111213141516171819202122232425262728293031323334353637#-------------------------------------------------## Project created by QtCreator 2022-09-05T15:13:32##-----">
+<meta property="og:description" content="qt基础">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://iwb5820.github.io/2022/12/01/class1/image-20220928015256954.png">
 <meta property="og:image" content="https://iwb5820.github.io/2022/12/01/class1/image-20220928015334266.png">
@@ -34,7 +34,7 @@
 <meta property="og:image" content="https://iwb5820.github.io/2022/12/01/class1/image-20220928015107376.png">
 <meta property="og:image" content="https://iwb5820.github.io/2022/12/01/class1/image-20220928015455340.png">
 <meta property="article:published_time" content="2022-12-01T08:25:50.324Z">
-<meta property="article:modified_time" content="2022-12-01T08:37:47.460Z">
+<meta property="article:modified_time" content="2022-12-02T07:38:26.386Z">
 <meta property="article:author" content="WuBa">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://iwb5820.github.io/2022/12/01/class1/image-20220928015256954.png">
@@ -240,9 +240,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2022-12-01 16:25:50 / Modified: 16:37:47" itemprop="dateCreated datePublished" datetime="2022-12-01T16:25:50+08:00">2022-12-01</time>
+      <time title="Created: 2022-12-01 16:25:50" itemprop="dateCreated datePublished" datetime="2022-12-01T16:25:50+08:00">2022-12-01</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2022-12-02 15:38:26" itemprop="dateModified" datetime="2022-12-02T15:38:26+08:00">2022-12-02</time>
     </span>
 
   
@@ -255,7 +261,8 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="qt基础"><a href="#qt基础" class="headerlink" title="qt基础"></a>qt基础</h2><h3 id="1-初始文件"><a href="#1-初始文件" class="headerlink" title="1.初始文件"></a>1.初始文件</h3><ul>
+        <h2 id="qt基础"><a href="#qt基础" class="headerlink" title="qt基础"></a>qt基础</h2><span id="more"></span>
+<h3 id="1-初始文件"><a href="#1-初始文件" class="headerlink" title="1.初始文件"></a>1.初始文件</h3><ul>
 <li>class1.pro 文件 </li>
 </ul>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">#-------------------------------------------------</span><br><span class="line">#</span><br><span class="line"># Project created by QtCreator <span class="number">2022</span><span class="number">-09</span><span class="number">-05</span>T15:<span class="number">13</span>:<span class="number">32</span></span><br><span class="line">#</span><br><span class="line">#-------------------------------------------------</span><br><span class="line"></span><br><span class="line">QT       += core gui #往Qt里加入core gui模块</span><br><span class="line"></span><br><span class="line"><span class="built_in">greaterThan</span>(QT_MAJOR_VERSION, <span class="number">4</span>): QT += widgets #假如Qt库的版本大于<span class="number">4</span>，就加入一个Qwidget的模块</span><br><span class="line"></span><br><span class="line">TARGET = class1 #生成APP的名字</span><br><span class="line">TEMPLATE = app #编译产物的类型</span><br><span class="line"></span><br><span class="line"># The following define makes your compiler emit warnings <span class="keyword">if</span> you use</span><br><span class="line"><span class="meta"># any feature of Qt which has been marked as deprecated (the exact warnings</span></span><br><span class="line"><span class="meta"># depend on your compiler). Please consult the documentation of the</span></span><br><span class="line"><span class="meta"># deprecated API in order to know how to port your code away from it.</span></span><br><span class="line">DEFINES += QT_DEPRECATED_WARNINGS #定义一个宏</span><br><span class="line"></span><br><span class="line"># You can also make your code fail to compile <span class="keyword">if</span> you use deprecated APIs.</span><br><span class="line"># In order to <span class="keyword">do</span> so, uncomment the following line.</span><br><span class="line"># You can also select to disable deprecated APIs only up to a certain version of Qt.</span><br><span class="line">#DEFINES += QT_DISABLE_DEPRECATED_BEFORE=<span class="number">0x060000</span>    <span class="meta"># disables all the APIs deprecated before Qt 6.0.0</span></span><br><span class="line"></span><br><span class="line">#指定工程都有哪些cpp</span><br><span class="line">SOURCES += \        </span><br><span class="line">        main.cpp \</span><br><span class="line">        widget.cpp</span><br><span class="line"></span><br><span class="line">#指定工程里面都有哪些头文件</span><br><span class="line">HEADERS += \</span><br><span class="line">        widget.h</span><br><span class="line"></span><br><span class="line">#指定工程里面都有哪些ui文件</span><br><span class="line">FORMS += \</span><br><span class="line">        widget.ui</span><br><span class="line"></span><br></pre></td></tr></table></figure>

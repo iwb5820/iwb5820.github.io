@@ -20,15 +20,15 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"iwb5820.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.2","exturl":false,"sidebar":{"position":"left","width":350,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="卡尔曼滤波器状态$x_t$ ，当前位置 $P_t$ ， 当前速度 $V_t$  $x_t &#x3D; \begin{bmatrix} P_t \ V_t \end{bmatrix}$ $Pt &#x3D; P{t-1} + V_{t-1}  \Delta t + U_t  \frac {\Delta t ^2}{2}$ $Vt &#x3D; V{t-1} + U_t * \Delta t$ $\begin{bmatrix}">
+    <meta name="description" content="卡尔曼滤波器">
 <meta property="og:type" content="article">
 <meta property="og:title" content="卡尔曼滤波器">
 <meta property="og:url" content="https://iwb5820.github.io/2022/12/01/%E5%8D%A1%E5%B0%94%E6%9B%BC%E6%BB%A4%E6%B3%A2%E5%99%A8/index.html">
 <meta property="og:site_name" content="isolatany">
-<meta property="og:description" content="卡尔曼滤波器状态$x_t$ ，当前位置 $P_t$ ， 当前速度 $V_t$  $x_t &#x3D; \begin{bmatrix} P_t \ V_t \end{bmatrix}$ $Pt &#x3D; P{t-1} + V_{t-1}  \Delta t + U_t  \frac {\Delta t ^2}{2}$ $Vt &#x3D; V{t-1} + U_t * \Delta t$ $\begin{bmatrix}">
+<meta property="og:description" content="卡尔曼滤波器">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-12-01T08:25:50.383Z">
-<meta property="article:modified_time" content="2022-12-01T08:34:55.356Z">
+<meta property="article:modified_time" content="2022-12-02T07:37:14.456Z">
 <meta property="article:author" content="WuBa">
 <meta name="twitter:card" content="summary">
 
@@ -233,9 +233,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2022-12-01 16:25:50 / Modified: 16:34:55" itemprop="dateCreated datePublished" datetime="2022-12-01T16:25:50+08:00">2022-12-01</time>
+      <time title="Created: 2022-12-01 16:25:50" itemprop="dateCreated datePublished" datetime="2022-12-01T16:25:50+08:00">2022-12-01</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2022-12-02 15:37:14" itemprop="dateModified" datetime="2022-12-02T15:37:14+08:00">2022-12-02</time>
     </span>
 
   
@@ -248,7 +254,8 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h3 id="卡尔曼滤波器"><a href="#卡尔曼滤波器" class="headerlink" title="卡尔曼滤波器"></a>卡尔曼滤波器</h3><p>状态$x_t$ ，当前位置 $P_t$ ， 当前速度 $V_t$</p>
+        <h3 id="卡尔曼滤波器"><a href="#卡尔曼滤波器" class="headerlink" title="卡尔曼滤波器"></a>卡尔曼滤波器</h3><span id="more"></span>
+<p>状态$x_t$ ，当前位置 $P_t$ ， 当前速度 $V_t$</p>
 <p> $x_t = \begin{bmatrix} P_t \ V_t \end{bmatrix}$</p>
 <p>$P<em>t = P</em>{t-1} + V_{t-1} <em> \Delta t + U_t </em> \frac {\Delta t ^2}{2}$</p>
 <p>$V<em>t = V</em>{t-1} + U_t * \Delta t$</p>

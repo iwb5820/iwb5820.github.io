@@ -20,18 +20,18 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"iwb5820.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.2","exturl":false,"sidebar":{"position":"left","width":350,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="LCD驱动方法123456789101112131415 static int i&#x3D;0,j&#x3D;0,cnt&#x3D;0;  BSP_LCD_Clear(LCD_COLOR_WHITE);  while (1)  &amp;#123;		  if(++i&gt;0)	  &amp;#123;					j++;i&#x3D;0;			BSP_LCD_SetFont(&amp;Font24);   BSP_LCD_DisplayString">
+    <meta name="description" content="LCD驱动方法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="LCD驱动方法">
 <meta property="og:url" content="https://iwb5820.github.io/2022/12/01/LCD%E9%A9%B1%E5%8A%A8%E6%96%B9%E6%B3%95/index.html">
 <meta property="og:site_name" content="isolatany">
-<meta property="og:description" content="LCD驱动方法123456789101112131415 static int i&#x3D;0,j&#x3D;0,cnt&#x3D;0;  BSP_LCD_Clear(LCD_COLOR_WHITE);  while (1)  &amp;#123;		  if(++i&gt;0)	  &amp;#123;					j++;i&#x3D;0;			BSP_LCD_SetFont(&amp;Font24);   BSP_LCD_DisplayString">
+<meta property="og:description" content="LCD驱动方法">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://iwb5820.github.io/2022/12/01/LCD%E9%A9%B1%E5%8A%A8%E6%96%B9%E6%B3%95/image-20220916144638954.png">
 <meta property="og:image" content="https://iwb5820.github.io/2022/12/01/LCD%E9%A9%B1%E5%8A%A8%E6%96%B9%E6%B3%95/image-20220916144658113.png">
 <meta property="og:image" content="https://iwb5820.github.io/2022/12/01/LCD%E9%A9%B1%E5%8A%A8%E6%96%B9%E6%B3%95/image-20220916144721510.png">
 <meta property="article:published_time" content="2022-12-01T08:25:50.345Z">
-<meta property="article:modified_time" content="2022-12-01T08:39:32.054Z">
+<meta property="article:modified_time" content="2022-12-02T07:38:47.947Z">
 <meta property="article:author" content="WuBa">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://iwb5820.github.io/2022/12/01/LCD%E9%A9%B1%E5%8A%A8%E6%96%B9%E6%B3%95/image-20220916144638954.png">
@@ -237,9 +237,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2022-12-01 16:25:50 / Modified: 16:39:32" itemprop="dateCreated datePublished" datetime="2022-12-01T16:25:50+08:00">2022-12-01</time>
+      <time title="Created: 2022-12-01 16:25:50" itemprop="dateCreated datePublished" datetime="2022-12-01T16:25:50+08:00">2022-12-01</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2022-12-02 15:38:47" itemprop="dateModified" datetime="2022-12-02T15:38:47+08:00">2022-12-02</time>
     </span>
 
   
@@ -252,7 +258,8 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="LCD驱动方法"><a href="#LCD驱动方法" class="headerlink" title="LCD驱动方法"></a>LCD驱动方法</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"> <span class="type">static</span> <span class="type">int</span> i=<span class="number">0</span>,j=<span class="number">0</span>,cnt=<span class="number">0</span>;</span><br><span class="line">  </span><br><span class="line">BSP_LCD_Clear(LCD_COLOR_WHITE);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">while</span> (<span class="number">1</span>)</span><br><span class="line">  &#123;	</span><br><span class="line">	  <span class="keyword">if</span>(++i&gt;<span class="number">0</span>)</span><br><span class="line">	  &#123;</span><br><span class="line">		</span><br><span class="line">			j++;i=<span class="number">0</span>;</span><br><span class="line">			BSP_LCD_SetFont(&amp;Font24);</span><br><span class="line">   BSP_LCD_DisplayStringAt(i,j , (<span class="type">uint8_t</span> *)<span class="string">&quot;HELLO&quot;</span>, CENTER_MODE);</span><br><span class="line">	&#125;</span><br><span class="line">			HAL_Delay(<span class="number">1</span>);</span><br><span class="line">		</span><br></pre></td></tr></table></figure>
+        <h2 id="LCD驱动方法"><a href="#LCD驱动方法" class="headerlink" title="LCD驱动方法"></a>LCD驱动方法</h2><span id="more"></span>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"> <span class="type">static</span> <span class="type">int</span> i=<span class="number">0</span>,j=<span class="number">0</span>,cnt=<span class="number">0</span>;</span><br><span class="line">  </span><br><span class="line">BSP_LCD_Clear(LCD_COLOR_WHITE);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">while</span> (<span class="number">1</span>)</span><br><span class="line">  &#123;	</span><br><span class="line">	  <span class="keyword">if</span>(++i&gt;<span class="number">0</span>)</span><br><span class="line">	  &#123;</span><br><span class="line">		</span><br><span class="line">			j++;i=<span class="number">0</span>;</span><br><span class="line">			BSP_LCD_SetFont(&amp;Font24);</span><br><span class="line">   BSP_LCD_DisplayStringAt(i,j , (<span class="type">uint8_t</span> *)<span class="string">&quot;HELLO&quot;</span>, CENTER_MODE);</span><br><span class="line">	&#125;</span><br><span class="line">			HAL_Delay(<span class="number">1</span>);</span><br><span class="line">		</span><br></pre></td></tr></table></figure>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span>(BSP_PB_GetState(BUTTON_WAKEUP) != RESET)</span><br><span class="line">    &#123;</span><br><span class="line">      HAL_Delay(<span class="number">10</span>);</span><br><span class="line">      <span class="keyword">while</span> (BSP_PB_GetState(BUTTON_WAKEUP) != RESET);   <span class="comment">/* Wait for button released */</span></span><br><span class="line">      </span><br><span class="line">      BSP_examples[DemoIndex++].DemoFunc();</span><br><span class="line">      </span><br><span class="line">      <span class="keyword">if</span>(DemoIndex &gt;= COUNT_OF_EXAMPLE(BSP_examples))</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="comment">/* Increment number of loops which be used by EEPROM example */</span></span><br><span class="line">        NbLoop++;</span><br><span class="line">        DemoIndex = <span class="number">0</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      Display_DemoDescription();</span><br><span class="line">    &#125;</span><br><span class="line">    Toggle_Leds();</span><br></pre></td></tr></table></figure>
 <p><img src="/2022/12/01/LCD%E9%A9%B1%E5%8A%A8%E6%96%B9%E6%B3%95/image-20220916144638954.png" alt="image-20220916144638954"></p>
 <p><img src="/2022/12/01/LCD%E9%A9%B1%E5%8A%A8%E6%96%B9%E6%B3%95/image-20220916144658113.png" alt="image-20220916144658113"></p>

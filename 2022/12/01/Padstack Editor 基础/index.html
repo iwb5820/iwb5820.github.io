@@ -20,15 +20,15 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"iwb5820.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.2","exturl":false,"sidebar":{"position":"left","width":350,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="PCB组成 焊盘   Padstack Editor 17.4 封装   PCB Editor 17.4  基本 Thru Pin 通孔 SMD Pin 贴片 Via 过孔 BBVia 盲埋孔 Microvia  微孔  （小于0.1mm的盲埋孔） Slot 槽孔   注意事项 单位一般设置为 mm Millimeter  进度设置为小数点后四位 Drill 钻孔设置Finished diamet">
+    <meta name="description" content="Padstack Editor">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Padstack Editor">
 <meta property="og:url" content="https://iwb5820.github.io/2022/12/01/Padstack%20Editor%20%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="isolatany">
-<meta property="og:description" content="PCB组成 焊盘   Padstack Editor 17.4 封装   PCB Editor 17.4  基本 Thru Pin 通孔 SMD Pin 贴片 Via 过孔 BBVia 盲埋孔 Microvia  微孔  （小于0.1mm的盲埋孔） Slot 槽孔   注意事项 单位一般设置为 mm Millimeter  进度设置为小数点后四位 Drill 钻孔设置Finished diamet">
+<meta property="og:description" content="Padstack Editor">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-12-01T08:25:50.349Z">
-<meta property="article:modified_time" content="2022-12-01T08:39:55.402Z">
+<meta property="article:modified_time" content="2022-12-02T07:44:39.311Z">
 <meta property="article:author" content="WuBa">
 <meta name="twitter:card" content="summary">
 
@@ -145,7 +145,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#PCB%E7%BB%84%E6%88%90"><span class="nav-number">1.</span> <span class="nav-text">PCB组成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC"><span class="nav-number">2.</span> <span class="nav-text">基本</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Drill-%E9%92%BB%E5%AD%94%E8%AE%BE%E7%BD%AE"><span class="nav-number">2.1.</span> <span class="nav-text">Drill 钻孔设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Secondary-Drill-%E8%AE%BE%E7%BD%AE"><span class="nav-number">2.2.</span> <span class="nav-text">Secondary Drill   设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Drill-Symbol-%E8%AE%BE%E7%BD%AE"><span class="nav-number">2.3.</span> <span class="nav-text">Drill Symbol 设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Drill-Offset-%E8%AE%BE%E7%BD%AE"><span class="nav-number">2.4.</span> <span class="nav-text">Drill Offset 设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Design-Layers-%E8%AE%BE%E7%BD%AE"><span class="nav-number">2.5.</span> <span class="nav-text">Design Layers 设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Mask-Layers-%E8%AE%BE%E7%BD%AE"><span class="nav-number">2.6.</span> <span class="nav-text">Mask Layers 设置</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PCB%E5%B0%81%E8%A3%85%E7%BB%84%E6%88%90%E5%85%83%E7%B4%A0"><span class="nav-number">3.</span> <span class="nav-text">PCB封装组成元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4"><span class="nav-number">4.</span> <span class="nav-text">操作步骤</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Padstack-Editor"><span class="nav-number">1.</span> <span class="nav-text">Padstack Editor</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PCB%E7%BB%84%E6%88%90"><span class="nav-number">2.</span> <span class="nav-text">PCB组成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC"><span class="nav-number">3.</span> <span class="nav-text">基本</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Drill-%E9%92%BB%E5%AD%94%E8%AE%BE%E7%BD%AE"><span class="nav-number">3.1.</span> <span class="nav-text">Drill 钻孔设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Secondary-Drill-%E8%AE%BE%E7%BD%AE"><span class="nav-number">3.2.</span> <span class="nav-text">Secondary Drill   设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Drill-Symbol-%E8%AE%BE%E7%BD%AE"><span class="nav-number">3.3.</span> <span class="nav-text">Drill Symbol 设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Drill-Offset-%E8%AE%BE%E7%BD%AE"><span class="nav-number">3.4.</span> <span class="nav-text">Drill Offset 设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Design-Layers-%E8%AE%BE%E7%BD%AE"><span class="nav-number">3.5.</span> <span class="nav-text">Design Layers 设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Mask-Layers-%E8%AE%BE%E7%BD%AE"><span class="nav-number">3.6.</span> <span class="nav-text">Mask Layers 设置</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PCB%E5%B0%81%E8%A3%85%E7%BB%84%E6%88%90%E5%85%83%E7%B4%A0"><span class="nav-number">4.</span> <span class="nav-text">PCB封装组成元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4"><span class="nav-number">5.</span> <span class="nav-text">操作步骤</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -233,9 +233,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2022-12-01 16:25:50 / Modified: 16:39:55" itemprop="dateCreated datePublished" datetime="2022-12-01T16:25:50+08:00">2022-12-01</time>
+      <time title="Created: 2022-12-01 16:25:50" itemprop="dateCreated datePublished" datetime="2022-12-01T16:25:50+08:00">2022-12-01</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2022-12-02 15:44:39" itemprop="dateModified" datetime="2022-12-02T15:44:39+08:00">2022-12-02</time>
     </span>
 
   
@@ -248,7 +254,8 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h3 id="PCB组成"><a href="#PCB组成" class="headerlink" title="PCB组成"></a>PCB组成</h3><blockquote>
+        <h3 id="Padstack-Editor"><a href="#Padstack-Editor" class="headerlink" title="Padstack Editor"></a>Padstack Editor</h3><span id="more"></span>
+<h3 id="PCB组成"><a href="#PCB组成" class="headerlink" title="PCB组成"></a>PCB组成</h3><blockquote>
 <p>焊盘   Padstack Editor 17.4</p>
 <p>封装   PCB Editor 17.4</p>
 </blockquote>

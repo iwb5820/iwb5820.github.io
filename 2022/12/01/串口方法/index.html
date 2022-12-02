@@ -20,16 +20,16 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"iwb5820.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.2","exturl":false,"sidebar":{"position":"left","width":350,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="串口方法基本内容缩写 DMA：STM32中的直接内存访问控制器 UART：通用异步收发器 USART：通用同步异步收发器 TX：发射 RX：接收 HT：半传输完成 DMA 事件&#x2F;标志 TC：传输完成 DMA 事件&#x2F;标志 RTO：接收器超时 UART 事件&#x2F;标志 IRQ：中断  模式划分 轮询模式（无 DMA，无 IRQ） P：应用程序正在轮询状态位以检查是否已发送&#x2F;接收任何字符，并以足够快的速度读">
+    <meta name="description" content="串口方法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="串口方法">
 <meta property="og:url" content="https://iwb5820.github.io/2022/12/01/%E4%B8%B2%E5%8F%A3%E6%96%B9%E6%B3%95/index.html">
 <meta property="og:site_name" content="isolatany">
-<meta property="og:description" content="串口方法基本内容缩写 DMA：STM32中的直接内存访问控制器 UART：通用异步收发器 USART：通用同步异步收发器 TX：发射 RX：接收 HT：半传输完成 DMA 事件&#x2F;标志 TC：传输完成 DMA 事件&#x2F;标志 RTO：接收器超时 UART 事件&#x2F;标志 IRQ：中断  模式划分 轮询模式（无 DMA，无 IRQ） P：应用程序正在轮询状态位以检查是否已发送&#x2F;接收任何字符，并以足够快的速度读">
+<meta property="og:description" content="串口方法">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://iwb5820.github.io/2022/12/01/%E4%B8%B2%E5%8F%A3%E6%96%B9%E6%B3%95/Users/71801/AppData/Roaming/Typora/typora-user-images/image-20220907145458969.png">
 <meta property="article:published_time" content="2022-12-01T08:25:50.363Z">
-<meta property="article:modified_time" content="2022-12-01T08:45:56.731Z">
+<meta property="article:modified_time" content="2022-12-02T07:35:53.326Z">
 <meta property="article:author" content="WuBa">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://iwb5820.github.io/2022/12/01/%E4%B8%B2%E5%8F%A3%E6%96%B9%E6%B3%95/Users/71801/AppData/Roaming/Typora/typora-user-images/image-20220907145458969.png">
@@ -235,9 +235,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2022-12-01 16:25:50 / Modified: 16:45:56" itemprop="dateCreated datePublished" datetime="2022-12-01T16:25:50+08:00">2022-12-01</time>
+      <time title="Created: 2022-12-01 16:25:50" itemprop="dateCreated datePublished" datetime="2022-12-01T16:25:50+08:00">2022-12-01</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2022-12-02 15:35:53" itemprop="dateModified" datetime="2022-12-02T15:35:53+08:00">2022-12-02</time>
     </span>
 
   
@@ -250,7 +256,8 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h2 id="串口方法"><a href="#串口方法" class="headerlink" title="串口方法"></a>串口方法</h2><h3 id="基本内容"><a href="#基本内容" class="headerlink" title="基本内容"></a><1>基本内容</1></h3><h4 id="缩写"><a href="#缩写" class="headerlink" title="缩写"></a>缩写</h4><ul>
+        <h2 id="串口方法"><a href="#串口方法" class="headerlink" title="串口方法"></a>串口方法</h2><span id="more"></span>
+<h3 id="基本内容"><a href="#基本内容" class="headerlink" title="基本内容"></a><1>基本内容</1></h3><h4 id="缩写"><a href="#缩写" class="headerlink" title="缩写"></a>缩写</h4><ul>
 <li>DMA：STM32中的直接内存访问控制器</li>
 <li>UART：通用异步收发器</li>
 <li>USART：通用同步异步收发器</li>

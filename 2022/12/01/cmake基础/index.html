@@ -20,15 +20,15 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"iwb5820.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.2","exturl":false,"sidebar":{"position":"left","width":350,"display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="cmake  基础说明cmake的定义是什么? ——高级编译配置工具当多个人用不同的语言或者编译器开发一个项目，最终要输出一个可执行文件或者共享库(ll, so等等)这时候神器就出现了—Make!所有操作都是通过编译CMakeLists.txt来完成的- -简单官方网站是www.cmake.org,可以通过访问官方网站获得更多关于cmake的信息学习CMake的目的，为将来处理大型的C&#x2F;C++&#x2F;J">
+    <meta name="description" content="cmake  基础">
 <meta property="og:type" content="article">
 <meta property="og:title" content="cmake基础">
 <meta property="og:url" content="https://iwb5820.github.io/2022/12/01/cmake%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="isolatany">
-<meta property="og:description" content="cmake  基础说明cmake的定义是什么? ——高级编译配置工具当多个人用不同的语言或者编译器开发一个项目，最终要输出一个可执行文件或者共享库(ll, so等等)这时候神器就出现了—Make!所有操作都是通过编译CMakeLists.txt来完成的- -简单官方网站是www.cmake.org,可以通过访问官方网站获得更多关于cmake的信息学习CMake的目的，为将来处理大型的C&#x2F;C++&#x2F;J">
+<meta property="og:description" content="cmake  基础">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-12-01T08:25:50.327Z">
-<meta property="article:modified_time" content="2022-12-01T08:38:02.039Z">
+<meta property="article:modified_time" content="2022-12-02T07:38:33.354Z">
 <meta property="article:author" content="WuBa">
 <meta name="twitter:card" content="summary">
 
@@ -233,9 +233,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2022-12-01 16:25:50 / Modified: 16:38:02" itemprop="dateCreated datePublished" datetime="2022-12-01T16:25:50+08:00">2022-12-01</time>
+      <time title="Created: 2022-12-01 16:25:50" itemprop="dateCreated datePublished" datetime="2022-12-01T16:25:50+08:00">2022-12-01</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2022-12-02 15:38:33" itemprop="dateModified" datetime="2022-12-02T15:38:33+08:00">2022-12-02</time>
     </span>
 
   
@@ -248,7 +254,8 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h3 id="cmake-基础"><a href="#cmake-基础" class="headerlink" title="cmake  基础"></a>cmake  基础</h3><h4 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h4><p>cmake的定义是什么? ——高级编译配置工具<br>当多个人用不同的语言或者编译器开发一个项目，最终要输出一个可执行文件或者共享库(ll, so等等)这时候神器就出现了—Make!<br>所有操作都是通过编译CMakeLists.txt来完成的- -简单<br>官方网站是www.cmake.org,可以通过访问官方网站获得更多关于cmake的信息<br>学习CMake的目的，为将来处理大型的C/C++/JAVA项目做准备</p>
+        <h3 id="cmake-基础"><a href="#cmake-基础" class="headerlink" title="cmake  基础"></a>cmake  基础</h3><span id="more"></span>
+<h4 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h4><p>cmake的定义是什么? ——高级编译配置工具<br>当多个人用不同的语言或者编译器开发一个项目，最终要输出一个可执行文件或者共享库(ll, so等等)这时候神器就出现了—Make!<br>所有操作都是通过编译CMakeLists.txt来完成的- -简单<br>官方网站是www.cmake.org,可以通过访问官方网站获得更多关于cmake的信息<br>学习CMake的目的，为将来处理大型的C/C++/JAVA项目做准备</p>
 <h4 id="cmake安装"><a href="#cmake安装" class="headerlink" title="cmake安装"></a>cmake安装</h4><ol>
 <li>绝大多数的linux系统已经安装了CMake</li>
 <li>Windows或某些没有安装过的Iinux系统，去<a target="_blank" rel="noopener" href="http://www.cmake.org/HTMLYDownload.html">http://www.cmake.org/HTMLYDownload.html</a> 可以下载安装</li>
