@@ -1,6 +1,7 @@
 site_name: 我的网站
-theme: readthedocs
 
-
-
-
+# 添加导航配置，包含新页面
+nav:
+  - 首页: index.md
+  - 关于: about.md
+  - 应用: app.md
