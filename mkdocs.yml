@@ -1,7 +1,31 @@
 site_name: 我的网站
+site_description: 网站描述信息
+site_author: 你的名字
 
-# 添加导航配置，包含新页面
+# 选择支持侧边栏和搜索的主题（推荐 mkdocs 或 readthedocs）
+theme:
+  name: mkdocs  # 或 "readthedocs"，这两个主题原生支持侧边栏和搜索
+  navigation_depth: 4  # 侧边栏显示的导航层级深度
+
+# 配置导航菜单（侧边栏内容）
 nav:
   - 首页: index.md
   - 关于: about.md
   - 应用: app.md
+  # 可以继续添加更多页面...
+
+# 启用搜索功能
+plugins:
+  - search:
+      lang: zh  # 设置搜索语言为中文（如果需要）
+      min_search_length: 2  # 最小搜索字符长度
+
+# 配置额外的页面元素（可选）
+extra:
+  homepage: index.md
+
+# 配置markdown扩展（可选，增强渲染功能）
+markdown_extensions:
+  - toc:
+      permalink: true  # 为标题添加永久链接
+  - admonition  # 支持提示框语法
