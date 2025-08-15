@@ -13,6 +13,33 @@ nav:
   - 首页: index.md
   - 关于: about.md
   - 应用: app.md
+  - 管理:
+      - 系统管理: manage/system.md
+      - 用户管理: manage/user.md
+      - 权限配置: manage/permission.md
+      - 数据备份: manage/backup.md
+  - 硬件:
+      - 设备清单: hardware/list.md
+      - 硬件安装: hardware/install.md
+      - 硬件维护: hardware/maintain.md
+      - 故障排查: hardware/troubleshoot.md
+  - 软件:
+      - 软件列表: software/list.md
+      - 安装教程: software/install.md
+      - 版本更新: software/update.md
+      - 插件管理: software/plugin.md
+      - 配置说明: software/config.md
+  - 操作:
+      - 基础操作: operation/basic.md
+      - 高级操作: operation/advanced.md
+      - 批量处理: operation/batch.md
+      - 快捷指令: operation/shortcut.md
+      - 常见问题: operation/faq.md
+  - 日志:
+      - 操作日志: log/operation.md
+      - 系统日志: log/system.md
+      - 错误日志: log/error.md
+      - 日志分析: log/analysis.md
   # 可以继续添加更多页面...
 
 # 启用搜索功能
